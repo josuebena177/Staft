@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'gilroy';
+    src: url(../fonts/Gilroy_Fonts/webFonts/GilroyBlack/font.woff2);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url(../fonts/Gilroy_Fonts/webFonts/GilroyExtraBold/font.woff2);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url(../fonts/Gilroy_Fonts/webFonts/GilroyBold/font.woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url(../fonts/Gilroy_Fonts/webFonts/GilroySemiBold/font.woff2);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url(../fonts/Gilroy_Fonts/webFonts/GilroyMedium/font.woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url(../fonts/Gilroy_Fonts/webFonts/GilroyRegular/font.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url(../fonts/Gilroy_Fonts/webFonts/GilroyThin/font.woff2);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'aeonik';
+    src: url(../fonts/Aeonik-Family-Webfont/Aeonik-Black.woff2);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'aeonik';
+    src: url(../fonts/Aeonik-Family-Webfont/Aeonik-Bold.woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'aeonik';
+    src: url(../fonts/Aeonik-Family-Webfont/Aeonik-Medium.woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'aeonik';
+    src: url(../fonts/Aeonik-Family-Webfont/Aeonik-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'aeonik';
+    src: url(../fonts/Aeonik-Family-Webfont/Aeonik-Thin.woff2);
+    font-weight: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.content {
+    width: 100%;
+    max-width: 1440px;
+    padding: 10px 80px;
+    margin: 0 auto;
+}
+
+.font-aeonik {
+    font-family: 'aeonik', sans-serif;
+}
+
+select {
+    color: #BCBABA !important;
+}
+
+select option {
+    color: #000 !important;
+}
+
+input::placeholder {
+    color: #BCBABA !important;
+}
+
+/* .text-limit-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+} */
+.overlay {
+    opacity: 0;
+    transition: .3s;
+    pointer-events: none;
+}
+
+section {
+    overflow-y: visible;
+    overflow-x: clip;
+}
+
+.firstRadial {
+    width: 1020px;
+    height: 854px;
+    background: radial-gradient(50% 50% at 50% 50%, #05494C 22.5%, #FFCA02 100%, rgba(255, 202, 2, 0.7) 100%);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .05;
+    z-index: -1;
+    filter: blur(60px);
+
+}
+
+.secondRadial {
+    width: 1124px;
+    height: 941px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(50% 50% at 50% 50%, #05494C 22.5%, #FFCA02 100%, rgba(255, 202, 2, 0.7) 100%);
+    opacity: 0.1;
+    z-index: -1;
+    filter: blur(60px);
+}
+
+@media (max-width: 1024px) {
+    .content {
+        padding: 10px 20px
+    }
+}
+
+@media (max-width: 768px) {
+    .menuList {
+        left: -300px;
+        transition: .3s;
+    }
+
+    .menuList.active {
+        left: 0;
+    }
+
+    .overlay.active {
+        opacity: 1;
+        pointer-events: all;
+        z-index: 20;
+    }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

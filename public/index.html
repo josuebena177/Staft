@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="overlay w-screen h-screen bg-[#00000071] fixed md:hidden"></div>
+    <header class="py-5">
+        <div class="content flex items-center justify-between ">
+            <img src="assets/images/logo.svg" alt="" class="logo w-[59px] sm:w-auto">
+            <ul
+                class="menuList md:h-fit h-screen md:w-fit w-[280px] flex md:items-center items-start md:flex-row flex-col md:relative fixed top-0 md:bg-transparent bg-white py-16 md:py-0 px-6 md:px-0 z-50">
+                <li class="text-lg text-[#222222] font-medium md:mb-0 mb-6">
+                    <a href="#">Employers</a>
+                </li>
+                <li class="text-lg text-[#222222] font-medium md:mb-0 mb-6 md:ml-16 ml-0">
+                    <a href="#">Job Seekers</a>
+                </li>
+                <li class="text-lg text-[#05494C] font-medium md:ml-16 ml-0">
+                    <a href="#">Sign In</a>
+                </li>
+            </ul>
+            <img src="assets/images/bars.svg" alt="" class="bars md:hidden block">
+        </div>
+    </header>
+
+    <section class="sm:py-14 py-6 relative">
+        <div class="firstRadial absolute"></div>
+        <div class="content">
+            <h1 class="text-[24px] sm:text-[40px] font-aeonik font-semibold text-center sm:mb-16 mb-8">Search Active
+                <span
+                    class="text-white bg-[#125354] px-2.5 rounded-lg inline-block sm:leading-10 leading-8">Sales</span>
+                Job Seekers
+                <br class="hidden sm:block"> Looking for Employment
+            </h1>
+            <div class="w-full max-w-[910px] mx-auto shadow-custom-shadow1 bg-white rounded-[30px] sm:mb-10 mb-6">
+                <div
+                    class="flex items-center justify-between w-full shadow-custom-shadow2 sm:py-4 py-2 sm:px-5 px-2.5 bg-white rounded-[30px]">
+                    <div
+                        class="w-[calc(70%-23px-7px)] sm:w-[calc(70%-31px-25px)] sm:h-[62px] h-[46px] border-[1px] border-[#B1B0B0] sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 sm:text-lg text-sm bg-[#F3F6F6]">
+                        <select class="w-full h-full outline-none border-0 bg-[#F3F6F6]">
+                            <option value="I am looking to hire" selected>I am looking to hire</option>
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="Zip Code"
+                        class="w-[calc(30%-23px-7px)] sm:w-[calc(30%-31px-25px)] sm:h-[62px] h-[46px] border-[1px] border-[#B1B0B0] sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 sm:text-lg text-sm outline-none bg-[#F3F6F6]">
+                    <button
+                        class="w-[46px] sm:w-[62px] sm:h-[62px] h-[46px] rounded-full border-0 grid place-items-center bg-[#05494C]">
+                        <img src="assets/images/search.svg" alt="" class="sm:w-auto w-[20px]">
+                    </button>
+                </div>
+            </div>
+            <p class="sm:text-lg text-sm font-medium text-center sm:mb-10 mb-3">Are you looking for a job? <a href="#"
+                    class="text-[#05494C]">Sign up here</a></p>
+            <div class="flex items-center justify-center sm:mb-20 mb-8 flex-wrap">
+                <div class="flex items-center">
+                    <img src="assets/images/trending.svg" alt="" class="sm:mr-3 mr-1 sm:w-auto w-[12px]">
+                    <p class="sm:text-lg text-[10px] font-medium text-[#666666]">Trending Searches:</p>
+                </div>
+                <ul class="flex items-center">
+                    <li
+                        class="py-[4px] sm:px-3 px-2 border-[1px] border-[#888888] rounded-[15px] sm:text-sm text-[8px] text-[#888888] sm:ml-4 ml-2">
+                        Customer Service Representative </li>
+                    <li
+                        class="py-[4px] sm:px-3 px-2 border-[1px] border-[#888888] rounded-[15px] sm:text-sm text-[8px] text-[#888888] sm:ml-4 ml-2">
+                        Sales Manager</li>
+                    <li
+                        class="py-[4px] sm:px-3 px-2 border-[1px] border-[#888888] rounded-[15px] sm:text-sm text-[8px] text-[#888888] sm:ml-4 ml-2 hidden sm:block">
+                        Chief Sales Officer</li>
+                    <li
+                        class="py-[4px] sm:px-3 px-2 border-[1px] border-[#888888] rounded-[15px] sm:text-sm text-[8px] text-[#888888] sm:ml-4 ml-2 hidden sm:block">
+                        Sales Director</li>
+                </ul>
+            </div>
+
+
+            <div class="flex items-start justify-center flex-wrap sm:mb-10 mb-6">
+                <div
+                    class="w-[179px] sm:w-[295px] sm:rounded-[32px] rounded-[10px] overflow-hidden border-[1px] border-[#C4C0C0] mb-10 sm:mx-3 mx-1 bg-white">
+                    <div
+                        class="relative w-full sm:h-[214px] h-[120px] sm:rounded-[32px] rounded-[10px] overflow-hidden">
+                        <img src="assets/images/man.jpg" alt="" class="w-full h-full object-cover">
+                        <button
+                            class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10">
+                            <img src="assets/images/play-person.png" alt="" class="w-[27px] sm:w-auto">
+                        </button>
+                    </div>
+                    <div class="sm:py-4 py-2 sm:px-3 px-1.5">
+                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="sm:text-lg text-sm font-semibold">Adams G.</h3>
+                            <div
+                                class="flex items-center rounded-[10px] sm:border-[1.5px] border-[1px] border-[#48BB01] sm:px-1 px-[2px] sm:py-1 py-[2px]">
+                                <img src="assets/images/green-check.svg" alt="" class="mr-1 sm:w-auto w-[10px]">
+                                <p class="sm:text-[10px] text-[8px] font-medium text-[#48BB01]">open to work</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm">Sales</h4>
+                            <div class="flex items-center rounded-[10px] bg-[#FFCA02] px-1.5 py-[2px]">
+                                <img src="assets/images/black-check.svg" alt="" class="mr-1">
+                                <p class="text-[8px]">VERIFIED</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[10px]">Senior Level</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/cap.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">University of Michigan, 2012</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/mail.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">adam******.com</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/phone.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">+905 -717 - ****</p>
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Retail Sales</p>
+                            </div>
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Internet Sales</p>
+                            </div>
+                            <p class="sm:text-xs text-[8px] font-bold text-[#666666]">+ 3 more</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                <p class="sm:text-[10px] text-[8px] text-[#9FA3A3]">Anytown, USA 12345</p>
+                            </div>
+                            <a href="#" class="flex items-center">
+                                <span
+                                    class="font-semibold text-[#05494C] sm:text-base text-xs sm:border-b-2 border-b-[1px] border-b-[#05494C] mr-1">Contact</span>
+                                <img src="assets/images/arrow-right.svg" alt="" class="sm:w-auto w-[10px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-[179px] sm:w-[295px] sm:rounded-[32px] rounded-[10px] overflow-hidden border-[1px] border-[#C4C0C0] mb-10 sm:mx-3 mx-1 bg-white">
+                    <div
+                        class="relative w-full sm:h-[214px] h-[120px] sm:rounded-[32px] rounded-[10px] overflow-hidden">
+                        <img src="assets/images/man.jpg" alt="" class="w-full h-full object-cover">
+                        <button
+                            class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10">
+                            <img src="assets/images/play-person.png" alt="" class="w-[27px] sm:w-auto">
+                        </button>
+                    </div>
+                    <div class="sm:py-4 py-2 sm:px-3 px-1.5">
+                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="sm:text-lg text-sm font-semibold">Adams G.</h3>
+                            <div
+                                class="flex items-center rounded-[10px] border-[1.5px] border-[#A4A5A3] sm:px-1 px-[2px] sm:py-1 py-[2px]">
+                                <p class="sm:text-[10px] text-[8px] font-medium text-[#A4A5A3]">NOT open to work</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm">Sales</h4>
+                            <div class="flex items-center rounded-[10px] bg-[#FFCA02] px-1.5 py-[2px]">
+                                <img src="assets/images/black-check.svg" alt="" class="mr-1">
+                                <p class="text-[8px]">VERIFIED</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[10px]">Senior Level</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/cap.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">University of Michigan, 2012</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/mail.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">adam******.com</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/phone.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">+905 -717 - ****</p>
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Retail Sales</p>
+                            </div>
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Internet Sales</p>
+                            </div>
+                            <p class="sm:text-xs text-[8px] font-bold text-[#666666]">+ 3 more</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                <p class="sm:text-[10px] text-[8px] text-[#9FA3A3]">Anytown, USA 12345</p>
+                            </div>
+                            <a href="#" class="flex items-center">
+                                <span
+                                    class="font-semibold text-[#05494C] sm:text-base text-xs sm:border-b-2 border-b-[1px] border-b-[#05494C] mr-1">Contact</span>
+                                <img src="assets/images/arrow-right.svg" alt="" class="sm:w-auto w-[10px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-[179px] sm:w-[295px] sm:rounded-[32px] rounded-[10px] overflow-hidden border-[1px] border-[#C4C0C0] mb-10 sm:mx-3 mx-1 bg-white">
+                    <div
+                        class="relative w-full sm:h-[214px] h-[120px] sm:rounded-[32px] rounded-[10px] overflow-hidden">
+                        <img src="assets/images/man.jpg" alt="" class="w-full h-full object-cover">
+                        <button
+                            class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10">
+                            <img src="assets/images/play-person.png" alt="" class="w-[27px] sm:w-auto">
+                        </button>
+                    </div>
+                    <div class="sm:py-4 py-2 sm:px-3 px-1.5">
+                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="text-lg font-semibold">Adams G.</h3>
+                            <div
+                                class="flex items-center rounded-[10px] sm:border-[1.5px] border-[1px] border-[#48BB01] sm:px-1 px-[2px] sm:py-1 py-[2px]">
+                                <img src="assets/images/green-check.svg" alt="" class="mr-1 sm:w-auto w-[10px]">
+                                <p class="text-[10px] font-medium text-[#48BB01]">open to work</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm">Sales</h4>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[10px]">Senior Level</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/cap.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">University of Michigan, 2012</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/mail.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">adam******.com</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/phone.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">+905 -717 - ****</p>
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Retail Sales</p>
+                            </div>
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Internet Sales</p>
+                            </div>
+                            <p class="sm:text-xs text-[8px] font-bold text-[#666666]">+ 3 more</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                <p class="sm:text-[10px] text-[8px] text-[#9FA3A3]">Anytown, USA 12345</p>
+                            </div>
+                            <a href="#" class="flex items-center">
+                                <span
+                                    class="font-semibold text-[#05494C] sm:text-base text-xs sm:border-b-2 border-b-[1px] border-b-[#05494C] mr-1">Contact</span>
+                                <img src="assets/images/arrow-right.svg" alt="" class="sm:w-auto w-[10px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-[179px] sm:w-[295px] sm:rounded-[32px] rounded-[10px] overflow-hidden border-[1px] border-[#C4C0C0] mb-10 sm:mx-3 mx-1 bg-white">
+                    <div
+                        class="relative w-full sm:h-[214px] h-[120px] sm:rounded-[32px] rounded-[10px] overflow-hidden">
+                        <img src="assets/images/man.jpg" alt="" class="w-full h-full object-cover">
+                        <button
+                            class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10">
+                            <img src="assets/images/play-person.png" alt="" class="w-[27px] sm:w-auto">
+                        </button>
+                    </div>
+                    <div class="sm:py-4 py-2 sm:px-3 px-1.5">
+                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="text-lg font-semibold">Adams G.</h3>
+                            <div
+                                class="flex items-center rounded-[10px] sm:border-[1.5px] border-[1px] border-[#48BB01] sm:px-1 px-[2px] sm:py-1 py-[2px]">
+                                <img src="assets/images/green-check.svg" alt="" class="mr-1 sm:w-auto w-[10px]">
+                                <p class="text-[10px] font-medium text-[#48BB01]">open to work</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm">Sales</h4>
+                            <div class="flex items-center rounded-[10px] bg-[#FFCA02] px-1.5 py-[2px]">
+                                <img src="assets/images/black-check.svg" alt="" class="mr-1">
+                                <p class="text-[8px]">VERIFIED</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[10px]">Senior Level</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/cap.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">University of Michigan, 2012</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/mail.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">adam******.com</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/phone.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">+905 -717 - ****</p>
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Retail Sales</p>
+                            </div>
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Internet Sales</p>
+                            </div>
+                            <p class="sm:text-xs text-[8px] font-bold text-[#666666]">+ 3 more</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                <p class="sm:text-[10px] text-[8px] text-[#9FA3A3]">Anytown, USA 12345</p>
+                            </div>
+                            <a href="#" class="flex items-center">
+                                <span
+                                    class="font-semibold text-[#05494C] sm:text-base text-xs sm:border-b-2 border-b-[1px] border-b-[#05494C] mr-1">Contact</span>
+                                <img src="assets/images/arrow-right.svg" alt="" class="sm:w-auto w-[10px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-[179px] sm:w-[295px] sm:rounded-[32px] rounded-[10px] overflow-hidden border-[1px] border-[#C4C0C0] mb-10 sm:mx-3 mx-1 bg-white">
+                    <div
+                        class="relative w-full sm:h-[214px] h-[120px] sm:rounded-[32px] rounded-[10px] overflow-hidden">
+                        <img src="assets/images/man.jpg" alt="" class="w-full h-full object-cover">
+                        <button
+                            class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10">
+                            <img src="assets/images/play-person.png" alt="" class="w-[27px] sm:w-auto">
+                        </button>
+                    </div>
+                    <div class="sm:py-4 py-2 sm:px-3 px-1.5">
+                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="text-lg font-semibold">Adams G.</h3>
+                            <div
+                                class="flex items-center rounded-[10px] sm:border-[1.5px] border-[1px] border-[#48BB01] sm:px-1 px-[2px] sm:py-1 py-[2px]">
+                                <img src="assets/images/green-check.svg" alt="" class="mr-1 sm:w-auto w-[10px]">
+                                <p class="text-[10px] font-medium text-[#48BB01]">open to work</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm">Sales</h4>
+                            <div class="flex items-center rounded-[10px] bg-[#FFCA02] px-1.5 py-[2px]">
+                                <img src="assets/images/black-check.svg" alt="" class="mr-1">
+                                <p class="text-[8px]">VERIFIED</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[10px]">Senior Level</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/cap.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">University of Michigan, 2012</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/mail.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">adam******.com</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/phone.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">+905 -717 - ****</p>
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Retail Sales</p>
+                            </div>
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Internet Sales</p>
+                            </div>
+                            <p class="sm:text-xs text-[8px] font-bold text-[#666666]">+ 3 more</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                <p class="sm:text-[10px] text-[8px] text-[#9FA3A3]">Anytown, USA 12345</p>
+                            </div>
+                            <a href="#" class="flex items-center">
+                                <span
+                                    class="font-semibold text-[#05494C] sm:text-base text-xs sm:border-b-2 border-b-[1px] border-b-[#05494C] mr-1">Contact</span>
+                                <img src="assets/images/arrow-right.svg" alt="" class="sm:w-auto w-[10px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-[179px] sm:w-[295px] sm:rounded-[32px] rounded-[10px] overflow-hidden border-[1px] border-[#C4C0C0] mb-10 sm:mx-3 mx-1 bg-white">
+                    <div
+                        class="relative w-full sm:h-[214px] h-[120px] sm:rounded-[32px] rounded-[10px] overflow-hidden">
+                        <img src="assets/images/man.jpg" alt="" class="w-full h-full object-cover">
+                        <button
+                            class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10">
+                            <img src="assets/images/play-person.png" alt="" class="w-[27px] sm:w-auto">
+                        </button>
+                    </div>
+                    <div class="sm:py-4 py-2 sm:px-3 px-1.5">
+                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="text-lg font-semibold">Adams G.</h3>
+                            <div
+                                class="flex items-center rounded-[10px] sm:border-[1.5px] border-[1px] border-[#48BB01] sm:px-1 px-[2px] sm:py-1 py-[2px]">
+                                <img src="assets/images/green-check.svg" alt="" class="mr-1 sm:w-auto w-[10px]">
+                                <p class="text-[10px] font-medium text-[#48BB01]">open to work</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm">Sales</h4>
+                            <div class="flex items-center rounded-[10px] bg-[#FFCA02] px-1.5 py-[2px]">
+                                <img src="assets/images/black-check.svg" alt="" class="mr-1">
+                                <p class="text-[8px]">VERIFIED</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[10px]">Senior Level</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/cap.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">University of Michigan, 2012</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/mail.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">adam******.com</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/phone.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">+905 -717 - ****</p>
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Retail Sales</p>
+                            </div>
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Internet Sales</p>
+                            </div>
+                            <p class="sm:text-xs text-[8px] font-bold text-[#666666]">+ 3 more</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                <p class="sm:text-[10px] text-[8px] text-[#9FA3A3]">Anytown, USA 12345</p>
+                            </div>
+                            <a href="#" class="flex items-center">
+                                <span
+                                    class="font-semibold text-[#05494C] sm:text-base text-xs sm:border-b-2 border-b-[1px] border-b-[#05494C] mr-1">Contact</span>
+                                <img src="assets/images/arrow-right.svg" alt="" class="sm:w-auto w-[10px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-[179px] sm:w-[295px] sm:rounded-[32px] rounded-[10px] overflow-hidden border-[1px] border-[#C4C0C0] mb-10 sm:mx-3 mx-1 bg-white">
+                    <div
+                        class="relative w-full sm:h-[214px] h-[120px] sm:rounded-[32px] rounded-[10px] overflow-hidden">
+                        <img src="assets/images/man.jpg" alt="" class="w-full h-full object-cover">
+                        <button
+                            class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10">
+                            <img src="assets/images/play-person.png" alt="" class="w-[27px] sm:w-auto">
+                        </button>
+                    </div>
+                    <div class="sm:py-4 py-2 sm:px-3 px-1.5">
+                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="text-lg font-semibold">Adams G.</h3>
+                            <div
+                                class="flex items-center rounded-[10px] sm:border-[1.5px] border-[1px] border-[#48BB01] sm:px-1 px-[2px] sm:py-1 py-[2px]">
+                                <img src="assets/images/green-check.svg" alt="" class="mr-1 sm:w-auto w-[10px]">
+                                <p class="text-[10px] font-medium text-[#48BB01]">open to work</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm">Sales</h4>
+                            <div class="flex items-center rounded-[10px] bg-[#FFCA02] px-1.5 py-[2px]">
+                                <img src="assets/images/black-check.svg" alt="" class="mr-1">
+                                <p class="text-[8px]">VERIFIED</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[10px]">Senior Level</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/cap.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">University of Michigan, 2012</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/mail.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">adam******.com</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/phone.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">+905 -717 - ****</p>
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Retail Sales</p>
+                            </div>
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Internet Sales</p>
+                            </div>
+                            <p class="sm:text-xs text-[8px] font-bold text-[#666666]">+ 3 more</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                <p class="sm:text-[10px] text-[8px] text-[#9FA3A3]">Anytown, USA 12345</p>
+                            </div>
+                            <a href="#" class="flex items-center">
+                                <span
+                                    class="font-semibold text-[#05494C] sm:text-base text-xs sm:border-b-2 border-b-[1px] border-b-[#05494C] mr-1">Contact</span>
+                                <img src="assets/images/arrow-right.svg" alt="" class="sm:w-auto w-[10px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-[179px] sm:w-[295px] sm:rounded-[32px] rounded-[10px] overflow-hidden border-[1px] border-[#C4C0C0] mb-10 sm:mx-3 mx-1 bg-white">
+                    <div
+                        class="relative w-full sm:h-[214px] h-[120px] sm:rounded-[32px] rounded-[10px] overflow-hidden">
+                        <img src="assets/images/man.jpg" alt="" class="w-full h-full object-cover">
+                        <button
+                            class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10">
+                            <img src="assets/images/play-person.png" alt="" class="w-[27px] sm:w-auto">
+                        </button>
+                    </div>
+                    <div class="sm:py-4 py-2 sm:px-3 px-1.5">
+                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="text-lg font-semibold">Adams G.</h3>
+                            <div
+                                class="flex items-center rounded-[10px] sm:border-[1.5px] border-[1px] border-[#48BB01] sm:px-1 px-[2px] sm:py-1 py-[2px]">
+                                <img src="assets/images/green-check.svg" alt="" class="mr-1 sm:w-auto w-[10px]">
+                                <p class="text-[10px] font-medium text-[#48BB01]">open to work</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm">Sales</h4>
+                            <div class="flex items-center rounded-[10px] bg-[#FFCA02] px-1.5 py-[2px]">
+                                <img src="assets/images/black-check.svg" alt="" class="mr-1">
+                                <p class="text-[8px]">VERIFIED</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[10px]">Senior Level</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/cap.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">University of Michigan, 2012</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/mail.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">adam******.com</p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <img src="assets/images/phone.svg" alt="" class="mr-2">
+                            <p class="sm:text-xs text-[8px] text-[#222222]">+905 -717 - ****</p>
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Retail Sales</p>
+                            </div>
+                            <div
+                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-[#888888] sm:mr-2 mr-1">
+                                <p class="sm:text-xs text-[8px] text-[#888888]">Internet Sales</p>
+                            </div>
+                            <p class="sm:text-xs text-[8px] font-bold text-[#666666]">+ 3 more</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                <p class="sm:text-[10px] text-[8px] text-[#9FA3A3]">Anytown, USA 12345</p>
+                            </div>
+                            <a href="#" class="flex items-center">
+                                <span
+                                    class="font-semibold text-[#05494C] sm:text-base text-xs sm:border-b-2 border-b-[1px] border-b-[#05494C] mr-1">Contact</span>
+                                <img src="assets/images/arrow-right.svg" alt="" class="sm:w-auto w-[10px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button
+                class="sm:text-lg text-sm font-semibold text-white bg-[#05494C] border-0 sm:rounded-[20px] rounded-xl sm:py-[15px] py-[10px] sm:px-[53px] px-[35px] block mx-auto">See
+                More</button>
+        </div>
+    </section>
+
+    <section class="bg-[#05494c0d] py-14 mb-48">
+        <div class="content">
+            <div class="flex items-center justify-center mb-16">
+                <div class="flex items-center bg-[#E8E7E7] sm:rounded-[20px] rounded-xl shadow-custom-shadow3">
+                    <button
+                        class="sm:rounded-[20px] rounded-xl px-[41px] py-[14px] border-0 outline-none sm:text-lg text-sm font-medium bg-white">Employers</button>
+                    <button
+                        class="sm:rounded-[20px] rounded-xl px-[41px] py-[14px] border-0 outline-none sm:text-lg text-sm font-medium text-[#666666] bg-transparent">Job
+                        Seekers</button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="w-full shadow-custom-shadow4 rounded-[30px] overflow-hidden mb-[-160px]">
+                    <div class="w-full shadow-custom-shadow5 rounded-[30px] overflow-hidden relative">
+                        <img src="assets/images/video-bg.png" alt="" class="w-full">
+                        <img src="assets/images/play-btn-big.svg" alt=""
+                            class="md:w-auto sm:w-[150px] w-[81px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#05494C] py-14">
+        <div class="content flex items-center sm:flex-row flex-col">
+            <div class="sm:w-2/4 w-full sm:pr-14 pr-0 mb-10 sm:mb-0">
+                <h2 class="sm:text-[40px] text-[24px] font-semibold text-white mb-7 sm:mb-10">Finding The Perfect
+                    Employee is Easy</h2>
+                <button
+                    class="border-0 outline-none px-[35px] sm:px-[53px] py-[12px] bg-[#FFCA02] sm:text-lg text-sm font-semibold rounded-xl sm:rounded-[20px]">Get
+                    Staft</button>
+            </div>
+            <div class="sm:w-2/4 w-full">
+                <div class="mb-8 flex items-center">
+                    <img src="assets/images/search-circle.svg" alt="" class="sm:w-[64px] w-[40px] sm:mr-10 mr-6">
+                    <div>
+                        <h3 class="sm:text-2xl text-lg font-semibold text-white sm:mb-3 mb-1.5">Search</h3>
+                        <p class="sm:text-lg text-sm text-white font-normal">Search active, local job seekers looking
+                            for sales and
+                            supportive roles in LA.</p>
+                    </div>
+                </div>
+                <div class="mb-8 flex items-center">
+                    <img src="assets/images/reach-circle.svg" alt="" class="sm:w-[64px] w-[40px] sm:mr-10 mr-6">
+                    <div>
+                        <h3 class="sm:text-2xl text-lg font-semibold text-white sm:mb-3 mb-1.5">Reach out</h3>
+                        <p class="sm:text-lg text-sm text-white font-normal">Easily connect and schedule interviews
+                            directly with
+                            any candidate you choose.</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img src="assets/images/hire-circle.svg" alt="" class="sm:w-[64px] w-[40px] sm:mr-10 mr-6">
+                    <div>
+                        <h3 class="sm:text-2xl text-lg font-semibold text-white sm:mb-3 mb-1.5">Hire</h3>
+                        <p class="sm:text-lg text-sm text-white font-normal">Satisfied with the candidate? Simply hire.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sm:py-16 py-10 sm:pt-[290px] pt-[220px] flex justify-between flex-col md:flex-row">
+        <div
+            class="w-full md:w-[calc(50%-25px)] h-fit flex flex-col items-end bg-[#FFFAE6] rounded-[25px] shadow-custom-shadow6 mb-[100px] sm:mb-[200px] md:mb-0">
+            <img src="assets/images/business-women.png" alt=""
+                class="sm:max-w-[595px] max-w-[95%] w-full object-cover sm:mt-[-200px] mt-[-100px]">
+            <div class="sm:px-14 px-2 sm:py-8 py-4 sm:max-w-[595px] max-w-[95%] w-full">
+                <h3 class="sm:text-[32px] text-[24px] text-[#222222] font-semibold mb-2">Looking for work?</h3>
+                <p class="sm:text-lg text-sm text-[#222222] mb-8">Stop applying. Discover exciting opportunities from
+                    employers who
+                    will
+                    reach out directly to you.</p>
+                <button
+                    class="sm:w-[204px] w-[149px] sm:h-[56px] h-[46px] sm:text-lg text-sm font-semibold text-white border-0 outline-none sm:rounded-[20px] rounded-xl bg-[#05494C]">Create
+                    my profile</button>
+            </div>
+        </div>
+        <div
+            class="w-full md:w-[calc(50%-25px)] h-fit flex flex-col items-start bg-[#FFFAE6] rounded-[25px] shadow-custom-shadow6 mt-20">
+            <img src="assets/images/business-man.png" alt=""
+                class="sm:max-w-[595px] max-w-[95%] w-full object-cover sm:mt-[-200px] mt-[-100px]">
+            <div class="sm:px-14 px-7 sm:py-8 py-4 sm:max-w-[595px] max-w-[95%] w-full">
+                <h3 class="sm:text-[32px] text-[24px] text-[#222222] font-semibold mb-2">Ready to hire?</h3>
+                <p class="sm:text-lg text-sm text-[#222222] mb-8">Staft streamlines the hiring process for thousands of
+                    employers
+                    by
+                    connecting them with targeted, active job seekers at scale. Discover how Staft can help your
+                    business</p>
+                <button
+                    class="sm:w-[204px] w-[149px] sm:h-[56px] h-[46px] sm:text-lg text-sm font-semibold text-[#222222] border-0 outline-none sm:rounded-[20px] rounded-xl bg-[#FFCA02]">Get
+                    Started</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sm:py-14 py-9 sm:pb-14 pb-2">
+        <div class="content">
+            <h2 class="sm:text-[40px] text-[24px] font-bold text-center mb-14">Blog</h2>
+            <div class="flex flex-wrap justify-between mb-16">
+                <div
+                    class="sm:w-[calc(50%-10px)] w-full sm:h-[410px] h-[288px] overflow-hidden sm:rounded-[20px] rounded-[10px] bg-[linear-gradient(180deg,rgba(0,0,0,0)15.13%,rgba(0,0,0,0.75)90.01%)] relative sm:px-4 px-3 sm:py-10 py-5 flex items-end sm:mb-8 mb-3">
+                    <img src="assets/images/blog-big-img.jpg" alt=""
+                        class="w-full h-full object-cover absolute left-0 top-0 z-[-1]">
+                    <div>
+                        <h3 class="sm:text-xl text-sm text-white font-semibold mb-2">Blog Topic</h3>
+                        <p class="sm:text-sm text-[10px] text-white mb-4">24th January, 2023</p>
+                        <p class="sm:text-sm text-[10px] text-white text-limit-2 max-w-[270px]">Lorem ipsum dolor sit
+                            amet, ipsum dolor
+                            sit amet ipsum dolor sit amet... See more</p>
+                    </div>
+                </div>
+                <div
+                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] lg:w-[calc(50%/2-10px)] sm:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden bg-white shadow-custom-shadow7 sm:mb-8 mb-3">
+                    <img src="assets/images/blog-img-sm.jpg" alt=""
+                        class="w-full sm:h-[235px] h-[144px] object-cover sm:rounded-[20px] rounded-[10px]">
+                    <div class="sm:px-4 px-2 sm:py-4 py-2 sm:pt-8 pt-3">
+                        <h3 class="sm:text-xl text-sm font-semibold mb-2">Blog Topic</h3>
+                        <p class="sm:text-sm text-[10px] text-[#666666] mb-3">24th January, 2023</p>
+                        <p class="sm:text-sm text-[10px] text-[#222222]">Lorem ipsum dolor sit amet, ipsum dolor sit
+                            amet ipsum dolor
+                            sit amet... See more</p>
+                    </div>
+                </div>
+                <div
+                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] lg:w-[calc(50%/2-10px)] sm:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden bg-white shadow-custom-shadow7 sm:mb-8 mb-3">
+                    <img src="assets/images/blog-img-sm.jpg" alt=""
+                        class="w-full sm:h-[235px] h-[144px] object-cover sm:rounded-[20px] rounded-[10px]">
+                    <div class="sm:px-4 px-2 sm:py-4 py-2 sm:pt-8 pt-3">
+                        <h3 class="sm:text-xl text-sm font-semibold mb-2">Blog Topic</h3>
+                        <p class="sm:text-sm text-[10px] text-[#666666] mb-3">24th January, 2023</p>
+                        <p class="sm:text-sm text-[10px] text-[#222222]">Lorem ipsum dolor sit amet, ipsum dolor sit
+                            amet ipsum dolor
+                            sit amet... See more</p>
+                    </div>
+                </div>
+                <div
+                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] lg:w-[calc(50%/2-10px)] sm:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden bg-white shadow-custom-shadow7 sm:mb-8 mb-3 hidden sm:block">
+                    <img src="assets/images/blog-img-sm.jpg" alt=""
+                        class="w-full sm:h-[235px] h-[144px] object-cover sm:rounded-[20px] rounded-[10px]">
+                    <div class="sm:px-4 px-2 sm:py-4 py-2 sm:pt-8 pt-3">
+                        <h3 class="sm:text-xl text-sm font-semibold mb-2">Blog Topic</h3>
+                        <p class="sm:text-sm text-[10px] text-[#666666] mb-3">24th January, 2023</p>
+                        <p class="sm:text-sm text-[10px] text-[#222222]">Lorem ipsum dolor sit amet, ipsum dolor sit
+                            amet ipsum dolor
+                            sit amet... See more</p>
+                    </div>
+                </div>
+                <div
+                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] lg:w-[calc(50%/2-10px)] sm:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden bg-white shadow-custom-shadow7 sm:mb-8 mb-3 hidden sm:block">
+                    <img src="assets/images/blog-img-sm.jpg" alt=""
+                        class="w-full sm:h-[235px] h-[144px] object-cover sm:rounded-[20px] rounded-[10px]">
+                    <div class="sm:px-4 px-2 sm:py-4 py-2 sm:pt-8 pt-3">
+                        <h3 class="sm:text-xl text-sm font-semibold mb-2">Blog Topic</h3>
+                        <p class="sm:text-sm text-[10px] text-[#666666] mb-3">24th January, 2023</p>
+                        <p class="sm:text-sm text-[10px] text-[#222222]">Lorem ipsum dolor sit amet, ipsum dolor sit
+                            amet ipsum dolor
+                            sit amet... See more</p>
+                    </div>
+                </div>
+                <div
+                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] lg:w-[calc(50%/2-10px)] sm:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden bg-white shadow-custom-shadow7 sm:mb-8 mb-3 hidden sm:block">
+                    <img src="assets/images/blog-img-sm.jpg" alt=""
+                        class="w-full sm:h-[235px] h-[144px] object-cover sm:rounded-[20px] rounded-[10px]">
+                    <div class="sm:px-4 px-2 sm:py-4 py-2 sm:pt-8 pt-3">
+                        <h3 class="sm:text-xl text-sm font-semibold mb-2">Blog Topic</h3>
+                        <p class="sm:text-sm text-[10px] text-[#666666] mb-3">24th January, 2023</p>
+                        <p class="sm:text-sm text-[10px] text-[#222222]">Lorem ipsum dolor sit amet, ipsum dolor sit
+                            amet ipsum dolor
+                            sit amet... See more</p>
+                    </div>
+                </div>
+                <div
+                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] lg:w-[calc(50%/2-10px)] sm:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden bg-white shadow-custom-shadow7 sm:mb-8 mb-3 hidden sm:block">
+                    <img src="assets/images/blog-img-sm.jpg" alt=""
+                        class="w-full sm:h-[235px] h-[144px] object-cover sm:rounded-[20px] rounded-[10px]">
+                    <div class="sm:px-4 px-2 sm:py-4 py-2 sm:pt-8 pt-3">
+                        <h3 class="sm:text-xl text-sm font-semibold mb-2">Blog Topic</h3>
+                        <p class="sm:text-sm text-[10px] text-[#666666] mb-3">24th January, 2023</p>
+                        <p class="sm:text-sm text-[10px] text-[#222222]">Lorem ipsum dolor sit amet, ipsum dolor sit
+                            amet ipsum dolor
+                            sit amet... See more</p>
+                    </div>
+                </div>
+            </div>
+
+            <button
+                class="sm:w-[204px] w-[128px] sm:h-[56px] h-[46px] border-0 outline-none sm:rounded-[20px] rounded-[10px] bg-[#05494C] sm:text-lg text-sm text-white font-semibold block mx-auto">See
+                More</button>
+        </div>
+    </section>
+
+    <section class="py-14 relative">
+        <div class="content flex items-center sm:flex-row flex-col relative">
+            <div class="sm:w-2/4 w-full sm:mb-0 mb-8">
+                <h2 class="sm:text-[40px] text-[24px] font-bold sm:mb-4 mb-2">Staft follows you<br>anywhere</h2>
+                <p class="sm:text-lg text-sm text-[#222222] sm:mb-10 mb-5">Staft streamlines the hiring process for
+                    thousands of employers
+                    by connecting them with targeted,
+                    active job seekers at scale. Discover how Staft can help your business.</p>
+                <div class="flex items-center">
+                    <button class="sm:w-auto w-[150px] border-0 bg-transparent outline-none mr-5">
+                        <img src="assets/images/appstore-btn.png" alt="">
+                    </button>
+                    <button class="sm:w-auto w-[150px] border-0 bg-transparent outline-none">
+                        <img src="assets/images/playstore-btn.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="sm:w-2/4 w-full sm:pl-14">
+                <img src="assets/images/follow-right.png" alt="" class="w-full">
+            </div>
+        </div>
+        <div class="secondRadial"></div>
+    </section>
+
+
+    <footer class="py-14 bg-[#05494C]">
+        <div class="content flex flex-wrap">
+            <div class="sm:w-[300px] w-full sm:mr-10 sm:mb-8">
+                <img src="assets/images/footer-logo.svg" alt="" class="sm:mb-7 mb-5 sm:w-auto w-[66px]">
+                <ul class="flex items-center mb-7">
+                    <li class="sm:mr-7 mr-4">
+                        <a href="#" class="sm:text-4xl text-3xl text-white">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="sm:mr-7 mr-4">
+                        <a href="#" class="sm:text-4xl text-3xl text-white">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="sm:mr-7 mr-3">
+                        <a href="#"
+                            class="sm:w-[37px] w-[31px] sm:h-[37px] h-[31px] rounded-full bg-white grid place-items-center sm:text-xl text-base text-[#05494C]">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-white sm:text-base text-xs">Copyright 2022© ProInvoice | All Right Reserved.</p>
+            </div>
+            <div class="w-[276px] pt-8 sm:mb-8">
+                <h3 class="sm:text-xl text-base text-white font-medium sm:mb-6 mb-3">Account</h3>
+                <ul>
+                    <li class="sm:mb-4 mb-2">
+                        <a href="#" class="sm:text-lg text-sm font-normal text-white">Log In</a>
+                    </li>
+                    <li class="sm:mb-4 mb-2">
+                        <a href="#" class="sm:text-lg text-sm font-normal text-white">Create Account</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sm:text-lg text-sm font-normal text-white">Top Employers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-[276px] pt-8 sm:mb-8">
+                <h3 class="sm:text-xl text-base text-white font-medium sm:mb-6 mb-3">Our Company</h3>
+                <ul>
+                    <li class="sm:mb-4 mb-2">
+                        <a href="#" class="sm:text-lg text-sm font-normal text-white">About</a>
+                    </li>
+                    <li class="sm:mb-4 mb-2">
+                        <a href="#" class="sm:text-lg text-sm font-normal text-white">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sm:text-lg text-sm font-normal text-white">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-[276px] pt-8">
+                <h3 class="sm:text-xl text-base text-white font-medium sm:mb-6 mb-3">Legal</h3>
+                <ul>
+                    <li class="sm:mb-4 mb-2">
+                        <a href="#" class="sm:text-lg text-sm font-normal text-white">Terms of Use</a>
+                    </li>
+                    <li class="sm:mb-4 mb-2">
+                        <a href="#" class="sm:text-lg text-sm font-normal text-white">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sm:text-lg text-sm font-normal text-white">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
