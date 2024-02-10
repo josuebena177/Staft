@@ -1062,6 +1062,10 @@ video {
   width: 100vw;
 }
 
+.w-\[calc\(50\%-10px\)\] {
+  width: calc(50% - 10px);
+}
+
 .max-w-\[270px\] {
   max-width: 270px;
 }
@@ -1553,6 +1557,12 @@ video {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media (min-width: 415px) {
+  .xs\:w-\[179px\] {
+    width: 179px;
+  }
 }
 
 @media (min-width: 640px) {

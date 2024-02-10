@@ -3,6 +3,14 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        'xs': '415px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
       boxShadow: {
         'custom-shadow1': '16px 16px 8px 0px rgba(0, 0, 0, 0.1)',
         'custom-shadow2': '-16px 0px 8px 0px #0000000A',
