@@ -873,6 +873,10 @@ video {
   margin-bottom: 100px;
 }
 
+.me-2 {
+  margin-inline-end: 0.5rem;
+}
+
 .ml-0 {
   margin-left: 0px;
 }
@@ -913,8 +917,8 @@ video {
   margin-top: -100px;
 }
 
-.me-2 {
-  margin-inline-end: 0.5rem;
+.ml-4 {
+  margin-left: 1rem;
 }
 
 .block {
