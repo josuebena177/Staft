@@ -163,9 +163,9 @@ section {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  opacity: .05;
+  opacity: .07;
   z-index: -1;
-  filter: blur(60px);
+  filter: blur(75px);
 }
 
 .secondRadial {
@@ -173,11 +173,11 @@ section {
   height: 941px;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -100px;
   background: radial-gradient(50% 50% at 50% 50%, #05494C 22.5%, #FFCA02 100%, rgba(255, 202, 2, 0.7) 100%);
   opacity: 0.1;
   z-index: -1;
-  filter: blur(60px);
+  filter: blur(75px);
 }
 
 .swiper-button-next,
@@ -1413,11 +1413,6 @@ video {
   background-color: #00000071;
 }
 
-.bg-\[\#FFFCF0\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 252 240 / var(--tw-bg-opacity));
-}
-
 .bg-deep-green {
   --tw-bg-opacity: 1;
   background-color: rgb(5 73 76 / var(--tw-bg-opacity));
@@ -1447,6 +1442,11 @@ video {
   background-color: rgb(255 250 230 / var(--tw-bg-opacity));
 }
 
+.bg-light-yellow2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 252 240 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -1454,11 +1454,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-light-yellow2 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 252 240 / var(--tw-bg-opacity));
 }
 
 .bg-\[linear-gradient\(180deg\2c rgba\(0\2c 0\2c 0\2c 0\)15\.13\%\2c rgba\(0\2c 0\2c 0\2c 0\.75\)90\.01\%\)\] {
