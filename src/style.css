@@ -170,6 +170,21 @@ section {
     color: #000;
 }
 
+
+.scrollContainer {
+    height: 1600px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    @supports (scrollbar-width: none) {
+        ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+    }
+}
+
+
 @media (max-width: 1280px) {
     .content {
         padding: 10px 15px
@@ -181,6 +196,7 @@ section {
     .content {
         padding: 10px 32px;
     }
+
     .menuList {
         left: -300px;
         transition: .3s;
@@ -206,14 +222,24 @@ section {
     .footerMenuItem ul {
         display: none;
     }
+
     .footerMenuItem h3 {
         margin-bottom: 0;
     }
+
     .footerMenuItem.active h3 {
         margin-bottom: 12px;
     }
+
     .footerMenuItem.active ul {
         display: block;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .scrollContainer {
+        height: unset
     }
 }
 
