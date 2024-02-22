@@ -35,24 +35,22 @@
     <section class="sm:py-14 py-6 relative">
         <div class="firstRadial absolute"></div>
         <div class="content">
-            <h1 class="text-[24px] sm:text-[30px] md:text-[40px] font-aeonik font-semibold text-center sm:mb-16 mb-8">
+            <h1 class="xs:text-[24px] text-[20px] sm:text-[30px] md:text-[40px] font-aeonik font-semibold text-center sm:mb-16 mb-8">
                 Search Active
                 <span
-                    class="text-white bg-deep-green px-2.5 rounded-lg inline-block sm:leading-10 leading-8 changeText">Sales</span>
+                    class="text-white bg-deep-green xs:px-2.5 px-1 rounded-lg inline-block sm:leading-10 leading-8 changeText">Sales</span>
                 Job Seekers
                 <br class="hidden sm:block"> Looking for Employment
             </h1>
-            <div class="w-full max-w-[910px] mx-auto shadow-custom-shadow1 bg-white rounded-[30px] sm:mb-10 mb-6">
-                <div class="w-full shadow-custom-shadow2 sm:py-4 py-2 sm:px-5 px-2.5 bg-white rounded-[30px]">
-                    <div
-                        class="flex items-center justify-between">
+            <div class="w-full max-w-[910px] mx-auto shadow-custom-shadow1 bg-white sm:rounded-[30px] rounded-[25px] sm:mb-10 mb-6">
+                <div class="w-full shadow-custom-shadow2 sm:py-4 py-2 sm:px-5 px-2.5 bg-white sm:rounded-[30px] rounded-[25px]">
+                    <div class="flex items-center justify-between">
                         <div
                             class="w-[calc(70%-23px-7px)] sm:w-[calc(70%-31px-25px)] sm:h-[62px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:text-lg text-sm bg-light-black2 relative">
                             <div
                                 class="lookingFor w-full h-full outline-none border-0 bg-light-black2 flex items-center justify-between sm:px-5 px-2 sm:rounded-[15px] rounded-[10px] cursor-pointer">
-                                <span class="text-deep-black4 text-lg w-full block pr-2 truncate lookingText">I am
-                                    looking to
-                                    hire</span>
+                                <span class="text-deep-black4 sm:text-lg xs:text-sm text-[10px] w-full block pr-2 truncate lookingText">I am
+                                    looking to hire</span>
                                 <img src="assets/images/arrow-down-big.svg" alt="">
                             </div>
                             <div
@@ -73,7 +71,9 @@
                                                 <div
                                                     class="py-[10px] px-8 flex items-center justify-between cursor-pointer">
                                                     <label class="custom-checkbox max-w-full">
-                                                        <small class=" sm:text-lg text-sm truncate block max-w-full">Customer Service
+                                                        <small
+                                                            class=" sm:text-lg text-sm truncate block max-w-full">Customer
+                                                            Service
                                                             Representative</small>
                                                         <input type="checkbox">
                                                         <span class="checkmark"></span>
@@ -82,7 +82,9 @@
                                                 <div
                                                     class="py-[10px] px-8 flex items-center justify-between cursor-pointer">
                                                     <label class="custom-checkbox max-w-full sm:text-lg text-sm">
-                                                        <small class=" sm:text-lg text-sm truncate block max-w-full">Retail Sales
+                                                        <small
+                                                            class=" sm:text-lg text-sm truncate block max-w-full">Retail
+                                                            Sales
                                                             Representative</small>
                                                         <input type="checkbox">
                                                         <span class="checkmark"></span>
@@ -91,7 +93,9 @@
                                                 <div
                                                     class="py-[10px] px-8 flex items-center justify-between cursor-pointer">
                                                     <label class="custom-checkbox max-w-full sm:text-lg text-sm">
-                                                        <small class=" sm:text-lg text-sm truncate block max-w-full">Internet Sales
+                                                        <small
+                                                            class=" sm:text-lg text-sm truncate block max-w-full">Internet
+                                                            Sales
                                                             Representative</small>
                                                         <input type="checkbox">
                                                         <span class="checkmark"></span>
@@ -100,12 +104,16 @@
                                                 <div
                                                     class="py-[10px] px-8 flex items-center justify-between cursor-pointer">
                                                     <label class="custom-checkbox max-w-full sm:text-lg text-sm">
-                                                        <small class=" sm:text-lg text-sm truncate block max-w-full">General Sales
+                                                        <small
+                                                            class=" sm:text-lg text-sm truncate block max-w-full">General
+                                                            Sales
                                                             Associate</small>
                                                         <input type="checkbox">
                                                         <span class="checkmark"></span>
                                                     </label>
                                                 </div>
+                                                <button
+                                                    class="doneBtn1 text-xl text-deep-green text-center font-semibold mt-[10px] mx-auto block bg-transparent outline-none">Done</button>
                                             </div>
                                         </div>
                                         <div
@@ -133,14 +141,14 @@
                             </div>
                         </div>
                         <input type="text" placeholder="Zip Code"
-                            class="w-[calc(30%-23px-7px)] sm:w-[calc(30%-31px-25px)] sm:h-[62px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 sm:text-lg text-sm outline-none bg-light-black2">
+                            class="w-[calc(30%-23px-7px)] sm:w-[calc(30%-31px-25px)] sm:h-[62px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 sm:pr-5 pr-0 sm:text-lg xs:text-sm text-[10px] outline-none bg-light-black2">
                         <button
                             class="w-[46px] sm:w-[62px] sm:h-[62px] h-[46px] rounded-full border-0 grid place-items-center bg-deep-green">
                             <img src="assets/images/search.svg" alt="" class="sm:w-auto w-[20px]">
                         </button>
                     </div>
                     <ul class="selectItemContainer flex items-center flex-wrap">
-                        
+
                     </ul>
                 </div>
             </div>
@@ -179,8 +187,8 @@
                             <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
                         </button>
                     </div>
-                    <div class="md:py-4 py-2 px-3">
-                        <div class="flex items-center justify-between md:mb-1 md:pl-0 pl-[95px]">
+                    <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
+                        <div class="flex items-center justify-between md:pl-0 pl-[95px]">
                             <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
                                     src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
                         </div>
@@ -191,7 +199,7 @@
                                 <p class="lg:text-xs text-[10px]">Online Now</p>
                             </div>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-3.5 mb-1.5 md:pl-0 pl-[95px]">
                             <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px]">Senior Level</p>
                         </div>
@@ -209,22 +217,18 @@
                             <img src="assets/images/lang.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-4 mb-2 md:pl-0 pl-[95px]">
                             <img src="assets/images/cap.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
                         </div>
                         <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] md:border-deep-black3 border-deep-green sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] md:text-deep-black3 text-deep-green">Retail Sales</p>
+                                <p class="lg:text-xs text-[8px] font-medium md:font-semibold md:text-deep-black3 text-deep-green">Retail Sales</p>
                             </div>
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
                                 <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
-                            </div>
-                            <div
-                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] text-deep-black3">Customer Support Rep.</p>
                             </div>
                             <p class="lg:text-xs text-[8px] font-bold text-deep-black2">+ 3 more</p>
                         </div>
@@ -235,7 +239,7 @@
                             </div>
                             <a href="#" class="md:flex hidden items-center">
                                 <span
-                                    class="font-semibold text-deep-green lg:text-base text-xs sm:border-b-2 border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                    class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
                                 <img src="assets/images/arrow-right.svg" alt="" class="lg:w-auto sm:w-[14px] w-[10px]">
                             </a>
                         </div>
@@ -251,8 +255,8 @@
                             <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
                         </button>
                     </div>
-                    <div class="md:py-4 py-2 px-3">
-                        <div class="flex items-center justify-between md:mb-1 md:pl-0 pl-[95px]">
+                    <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
+                        <div class="flex items-center justify-between md:pl-0 pl-[95px]">
                             <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
                                     src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
                         </div>
@@ -263,7 +267,7 @@
                                 <p class="lg:text-xs text-[10px]">Online Now</p>
                             </div>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-3.5 mb-1.5 md:pl-0 pl-[95px]">
                             <img src="assets/images/entry-sign.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px]">Entry Level</p>
                         </div>
@@ -281,22 +285,18 @@
                             <img src="assets/images/lang.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-4 mb-2 md:pl-0 pl-[95px]">
                             <img src="assets/images/cap.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
                         </div>
                         <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] md:border-deep-black3 border-deep-green sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] md:text-deep-black3 text-deep-green">Retail Sales</p>
+                                <p class="lg:text-xs text-[8px] font-medium md:font-semibold md:text-deep-black3 text-deep-green">Retail Sales</p>
                             </div>
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
                                 <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
-                            </div>
-                            <div
-                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] text-deep-black3">Customer Support Rep.</p>
                             </div>
                             <p class="lg:text-xs text-[8px] font-bold text-deep-black2">+ 3 more</p>
                         </div>
@@ -307,7 +307,7 @@
                             </div>
                             <a href="#" class="md:flex hidden items-center">
                                 <span
-                                    class="font-semibold text-deep-green lg:text-base text-xs sm:border-b-2 border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                    class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
                                 <img src="assets/images/arrow-right.svg" alt="" class="lg:w-auto sm:w-[14px] w-[10px]">
                             </a>
                         </div>
@@ -323,8 +323,8 @@
                             <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
                         </button> -->
                     </div>
-                    <div class="md:py-4 py-2 px-3">
-                        <div class="flex items-center justify-between md:mb-1 md:pl-0 pl-[95px]">
+                    <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
+                        <div class="flex items-center justify-between md:pl-0 pl-[95px]">
                             <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G.</h3>
                         </div>
                         <div class="flex items-center justify-between mb-1 md:pl-0 pl-[95px]">
@@ -334,7 +334,7 @@
                                 <p class="lg:text-xs text-[10px]">Online Now</p>
                             </div>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-3.5 mb-1.5 md:pl-0 pl-[95px]">
                             <img src="assets/images/mid-sign.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px]">Mid Level</p>
                         </div>
@@ -352,22 +352,18 @@
                             <img src="assets/images/lang.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-4 mb-2 md:pl-0 pl-[95px]">
                             <img src="assets/images/cap.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
                         </div>
                         <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] md:border-deep-black3 border-deep-green sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] md:text-deep-black3 text-deep-green">Retail Sales</p>
+                                <p class="lg:text-xs text-[8px] font-medium md:font-semibold md:text-deep-black3 text-deep-green">Retail Sales</p>
                             </div>
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
                                 <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
-                            </div>
-                            <div
-                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] text-deep-black3">Customer Support Rep.</p>
                             </div>
                             <p class="lg:text-xs text-[8px] font-bold text-deep-black2">+ 3 more</p>
                         </div>
@@ -378,7 +374,7 @@
                             </div>
                             <a href="#" class="md:flex hidden items-center">
                                 <span
-                                    class="font-semibold text-deep-green lg:text-base text-xs sm:border-b-2 border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                    class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
                                 <img src="assets/images/arrow-right.svg" alt="" class="lg:w-auto sm:w-[14px] w-[10px]">
                             </a>
                         </div>
@@ -394,8 +390,8 @@
                             <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
                         </button>
                     </div>
-                    <div class="md:py-4 py-2 px-3">
-                        <div class="flex items-center justify-between md:mb-1 md:pl-0 pl-[95px]">
+                    <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
+                        <div class="flex items-center justify-between md:pl-0 pl-[95px]">
                             <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
                                     src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
                         </div>
@@ -405,7 +401,7 @@
                                 <p class="lg:text-xs text-[10px] text-deep-black3">Active 6 hrs ago</p>
                             </div>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-3.5 mb-1.5 md:pl-0 pl-[95px]">
                             <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px]">Senior Level</p>
                         </div>
@@ -423,22 +419,18 @@
                             <img src="assets/images/lang.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-4 mb-2 md:pl-0 pl-[95px]">
                             <img src="assets/images/cap.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
                         </div>
                         <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] md:border-deep-black3 border-deep-green sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] md:text-deep-black3 text-deep-green">Retail Sales</p>
+                                <p class="lg:text-xs text-[8px] font-medium md:font-semibold md:text-deep-black3 text-deep-green">Retail Sales</p>
                             </div>
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
                                 <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
-                            </div>
-                            <div
-                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] text-deep-black3">Customer Support Rep.</p>
                             </div>
                             <p class="lg:text-xs text-[8px] font-bold text-deep-black2">+ 3 more</p>
                         </div>
@@ -449,7 +441,7 @@
                             </div>
                             <a href="#" class="md:flex hidden items-center">
                                 <span
-                                    class="font-semibold text-deep-green lg:text-base text-xs sm:border-b-2 border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                    class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
                                 <img src="assets/images/arrow-right.svg" alt="" class="lg:w-auto sm:w-[14px] w-[10px]">
                             </a>
                         </div>
@@ -465,8 +457,8 @@
                             <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
                         </button>
                     </div>
-                    <div class="md:py-4 py-2 px-3">
-                        <div class="flex items-center justify-between md:mb-1 md:pl-0 pl-[95px]">
+                    <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
+                        <div class="flex items-center justify-between md:pl-0 pl-[95px]">
                             <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
                                     src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
                         </div>
@@ -476,7 +468,7 @@
                                 <p class="lg:text-xs text-[10px] text-deep-black3">Active 6 hrs ago</p>
                             </div>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-3.5 mb-1.5 md:pl-0 pl-[95px]">
                             <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px]">Senior Level</p>
                         </div>
@@ -494,22 +486,18 @@
                             <img src="assets/images/lang.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-4 mb-2 md:pl-0 pl-[95px]">
                             <img src="assets/images/cap.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
                         </div>
                         <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] md:border-deep-black3 border-deep-green sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] md:text-deep-black3 text-deep-green">Retail Sales</p>
+                                <p class="lg:text-xs text-[8px] font-medium md:font-semibold md:text-deep-black3 text-deep-green">Retail Sales</p>
                             </div>
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
                                 <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
-                            </div>
-                            <div
-                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] text-deep-black3">Customer Support Rep.</p>
                             </div>
                             <p class="lg:text-xs text-[8px] font-bold text-deep-black2">+ 3 more</p>
                         </div>
@@ -520,7 +508,7 @@
                             </div>
                             <a href="#" class="md:flex hidden items-center">
                                 <span
-                                    class="font-semibold text-deep-green lg:text-base text-xs sm:border-b-2 border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                    class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
                                 <img src="assets/images/arrow-right.svg" alt="" class="lg:w-auto sm:w-[14px] w-[10px]">
                             </a>
                         </div>
@@ -536,8 +524,8 @@
                             <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
                         </button>
                     </div>
-                    <div class="md:py-4 py-2 px-3">
-                        <div class="flex items-center justify-between md:mb-1 md:pl-0 pl-[95px]">
+                    <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
+                        <div class="flex items-center justify-between md:pl-0 pl-[95px]">
                             <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G.</h3>
                         </div>
                         <div class="flex items-center justify-between mb-1 md:pl-0 pl-[95px]">
@@ -546,7 +534,7 @@
                                 <p class="lg:text-xs text-[10px] text-deep-black3">Active 6 hrs ago</p>
                             </div>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-3.5 mb-1.5 md:pl-0 pl-[95px]">
                             <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px]">Senior Level</p>
                         </div>
@@ -564,22 +552,18 @@
                             <img src="assets/images/lang.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-4 mb-2 md:pl-0 pl-[95px]">
                             <img src="assets/images/cap.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
                         </div>
                         <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] md:border-deep-black3 border-deep-green sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] md:text-deep-black3 text-deep-green">Retail Sales</p>
+                                <p class="lg:text-xs text-[8px] font-medium md:font-semibold md:text-deep-black3 text-deep-green">Retail Sales</p>
                             </div>
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
                                 <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
-                            </div>
-                            <div
-                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] text-deep-black3">Customer Support Rep.</p>
                             </div>
                             <p class="lg:text-xs text-[8px] font-bold text-deep-black2">+ 3 more</p>
                         </div>
@@ -590,7 +574,7 @@
                             </div>
                             <a href="#" class="md:flex hidden items-center">
                                 <span
-                                    class="font-semibold text-deep-green lg:text-base text-xs sm:border-b-2 border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                    class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
                                 <img src="assets/images/arrow-right.svg" alt="" class="lg:w-auto sm:w-[14px] w-[10px]">
                             </a>
                         </div>
@@ -606,8 +590,8 @@
                             <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
                         </button> -->
                     </div>
-                    <div class="md:py-4 py-2 px-3">
-                        <div class="flex items-center justify-between md:mb-1 md:pl-0 pl-[95px]">
+                    <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
+                        <div class="flex items-center justify-between md:pl-0 pl-[95px]">
                             <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
                                     src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
                         </div>
@@ -618,7 +602,7 @@
                                 <p class="lg:text-xs text-[10px]">Online Now</p>
                             </div>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-3.5 mb-1.5 md:pl-0 pl-[95px]">
                             <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px]">Senior Level</p>
                         </div>
@@ -636,22 +620,18 @@
                             <img src="assets/images/lang.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-4 mb-2 md:pl-0 pl-[95px]">
                             <img src="assets/images/cap.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
                         </div>
                         <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] md:border-deep-black3 border-deep-green sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] md:text-deep-black3 text-deep-green">Retail Sales</p>
+                                <p class="lg:text-xs text-[8px] font-medium md:font-semibold md:text-deep-black3 text-deep-green">Retail Sales</p>
                             </div>
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
                                 <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
-                            </div>
-                            <div
-                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] text-deep-black3">Customer Support Rep.</p>
                             </div>
                             <p class="lg:text-xs text-[8px] font-bold text-deep-black2">+ 3 more</p>
                         </div>
@@ -662,7 +642,7 @@
                             </div>
                             <a href="#" class="md:flex hidden items-center">
                                 <span
-                                    class="font-semibold text-deep-green lg:text-base text-xs sm:border-b-2 border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                    class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
                                 <img src="assets/images/arrow-right.svg" alt="" class="lg:w-auto sm:w-[14px] w-[10px]">
                             </a>
                         </div>
@@ -678,8 +658,8 @@
                             <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
                         </button>
                     </div>
-                    <div class="md:py-4 py-2 px-3">
-                        <div class="flex items-center justify-between md:mb-1 md:pl-0 pl-[95px]">
+                    <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
+                        <div class="flex items-center justify-between md:pl-0 pl-[95px]">
                             <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
                                     src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
                         </div>
@@ -690,7 +670,7 @@
                                 <p class="lg:text-xs text-[10px]">Online Now</p>
                             </div>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-3.5 mb-1.5 md:pl-0 pl-[95px]">
                             <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px]">Senior Level</p>
                         </div>
@@ -708,22 +688,18 @@
                             <img src="assets/images/lang.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
                         </div>
-                        <div class="flex items-center md:mb-2 mb-1 md:pl-0 pl-[95px]">
+                        <div class="flex items-center md:mb-4 mb-2 md:pl-0 pl-[95px]">
                             <img src="assets/images/cap.svg" alt="" class="mr-2">
                             <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
                         </div>
                         <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] md:border-deep-black3 border-deep-green sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] md:text-deep-black3 text-deep-green">Retail Sales</p>
+                                <p class="lg:text-xs text-[8px] font-medium md:font-semibold md:text-deep-black3 text-deep-green">Retail Sales</p>
                             </div>
                             <div
                                 class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
                                 <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
-                            </div>
-                            <div
-                                class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                <p class="lg:text-xs text-[8px] text-deep-black3">Customer Support Rep.</p>
                             </div>
                             <p class="lg:text-xs text-[8px] font-bold text-deep-black2">+ 3 more</p>
                         </div>
@@ -734,7 +710,7 @@
                             </div>
                             <a href="#" class="md:flex hidden items-center">
                                 <span
-                                    class="font-semibold text-deep-green lg:text-base text-xs sm:border-b-2 border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                    class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
                                 <img src="assets/images/arrow-right.svg" alt="" class="lg:w-auto sm:w-[14px] w-[10px]">
                             </a>
                         </div>
@@ -754,7 +730,7 @@
                 <div
                     class="shadow-custom-shadow3 flex items-center bg-light-black5 sm:rounded-[20px] rounded-xl text-deep-black2">
                     <button
-                        class="shadow-custom-shadow3 sm:rounded-[20px] rounded-xl px-[41px] py-[14px] border-0 outline-none sm:text-lg text-sm font-medium bg-white">Employers</button>
+                        class="shadow-custom-shadow3 sm:rounded-[20px] rounded-xl px-[40px] py-[14px] border-0 outline-none sm:text-lg text-sm font-medium bg-white">Employers</button>
                     <button
                         class="sm:rounded-[20px] rounded-xl px-[41px] py-[14px] border-0 outline-none sm:text-lg text-sm font-medium bg-transparent">Job
                         Seekers</button>
@@ -815,7 +791,7 @@
 
     <section class="sm:py-16 py-10 sm:pt-[290px] pt-[220px] flex justify-between flex-col md:flex-row">
         <div
-            class="w-full md:w-[calc(50%-25px)] h-fit flex flex-col items-end bg-light-yellow rounded-[25px] shadow-custom-shadow6 mb-[100px] sm:mb-[200px] md:mb-0">
+            class="w-full md:w-[calc(50%-25px)] h-fit flex flex-col items-end bg-light-yellow rounded-[25px] shadow-custom-shadow6 mb-14 sm:mb-[150px] md:mb-0">
             <img src="assets/images/business-women.png" alt=""
                 class="sm:max-w-[595px] max-w-[95%] w-full object-cover sm:mt-[-200px] mt-[-100px]">
             <div class="sm:px-14 px-2 sm:py-8 py-4 sm:max-w-[595px] max-w-[95%] w-full">
@@ -849,8 +825,8 @@
 
     <section class="sm:py-14 py-9 sm:pb-14 pb-2">
         <div class="content">
-            <h2 class="sm:text-[40px] text-[24px] font-bold text-center mb-14">Blog</h2>
-            <div class="flex flex-wrap justify-between mb-16">
+            <h2 class="sm:text-[40px] text-[24px] font-bold text-center lg:mb-20 mb-14">Blog</h2>
+            <div class="flex flex-wrap justify-between sm:mb-16 mb-14">
                 <div
                     class="md:w-[calc(50%-10px)] w-full sm:h-[410px] h-[288px] overflow-hidden sm:rounded-[20px] rounded-[10px] bg-[linear-gradient(180deg,rgba(0,0,0,0)15.13%,rgba(0,0,0,0.75)90.01%)] relative sm:px-4 px-3 sm:py-10 py-5 flex items-end sm:mb-8 mb-3">
                     <img src="assets/images/blog1.jpg" alt=""
@@ -860,11 +836,11 @@
                         <p class="sm:text-sm text-[10px] text-white mb-4">24th January, 2023</p>
                         <p class="sm:text-sm text-[10px] text-white text-limit-2 max-w-[270px]">Lorem ipsum dolor sit
                             amet, ipsum dolor
-                            sit amet ipsum dolor sit amet... <span class="font-semibold">see more</span></p>
+                            sit amet ipsum dolor sit amet... <span class="font-bold">See more</span></p>
                     </div>
                 </div>
                 <div
-                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] md:w-[calc(50%/2-10px)] sm:h-[430px] lg:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden bg-white shadow-custom-shadow7 sm:mb-8 mb-3">
+                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] md:w-[calc(50%/2-10px)] sm:h-[430px] lg:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden md:bg-white bg-transparent shadow-custom-shadow7 sm:mb-8 mb-3">
                     <img src="assets/images/blog2.jpg" alt=""
                         class="w-full sm:h-[235px] h-[144px] object-cover sm:rounded-[20px] rounded-[10px]">
                     <div class="sm:px-4 px-2 sm:py-4 py-2 sm:pt-8 pt-3">
@@ -872,11 +848,11 @@
                         <p class="sm:text-sm text-[10px] text-deep-black2 mb-3">24th January, 2023</p>
                         <p class="sm:text-sm text-[10px] text-deep-black">Lorem ipsum dolor sit amet, ipsum dolor sit
                             amet ipsum dolor
-                            sit amet... <span class="text-deep-green font-semibold">see more</span></p>
+                            sit amet... <span class="text-deep-green font-bold">See more</span></p>
                     </div>
                 </div>
                 <div
-                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] md:w-[calc(50%/2-10px)] sm:h-[430px] lg:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden bg-white shadow-custom-shadow7 sm:mb-8 mb-3">
+                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] md:w-[calc(50%/2-10px)] sm:h-[430px] lg:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden md:bg-white bg-transparent shadow-custom-shadow7 sm:mb-8 mb-3">
                     <img src="assets/images/blog3.jpg" alt=""
                         class="w-full sm:h-[235px] h-[144px] object-cover sm:rounded-[20px] rounded-[10px]">
                     <div class="sm:px-4 px-2 sm:py-4 py-2 sm:pt-8 pt-3">
@@ -884,11 +860,11 @@
                         <p class="sm:text-sm text-[10px] text-deep-black2 mb-3">24th January, 2023</p>
                         <p class="sm:text-sm text-[10px] text-deep-black">Lorem ipsum dolor sit amet, ipsum dolor sit
                             amet ipsum dolor
-                            sit amet... <span class="text-deep-green font-semibold">see more</span></p>
+                            sit amet... <span class="text-deep-green font-bold">See more</span></p>
                     </div>
                 </div>
                 <div
-                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] md:w-[calc(50%/2-10px)] sm:h-[430px] lg:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden bg-white shadow-custom-shadow7 sm:mb-8 mb-3 hidden md:block">
+                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] md:w-[calc(50%/2-10px)] sm:h-[430px] lg:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden md:bg-white bg-transparent shadow-custom-shadow7 sm:mb-8 mb-3 hidden md:block">
                     <img src="assets/images/blog4.jpg" alt=""
                         class="w-full sm:h-[235px] h-[144px] object-cover sm:rounded-[20px] rounded-[10px]">
                     <div class="sm:px-4 px-2 sm:py-4 py-2 sm:pt-8 pt-3">
@@ -896,11 +872,11 @@
                         <p class="sm:text-sm text-[10px] text-deep-black2 mb-3">24th January, 2023</p>
                         <p class="sm:text-sm text-[10px] text-deep-black">Lorem ipsum dolor sit amet, ipsum dolor sit
                             amet ipsum dolor
-                            sit amet... <span class="text-deep-green font-semibold">see more</span></p>
+                            sit amet... <span class="text-deep-green font-bold">See more</span></p>
                     </div>
                 </div>
                 <div
-                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] md:w-[calc(50%/2-10px)] sm:h-[430px] lg:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden bg-white shadow-custom-shadow7 sm:mb-8 mb-3 hidden md:block">
+                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] md:w-[calc(50%/2-10px)] sm:h-[430px] lg:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden md:bg-white bg-transparent shadow-custom-shadow7 sm:mb-8 mb-3 hidden md:block">
                     <img src="assets/images/blog5.jpg" alt=""
                         class="w-full sm:h-[235px] h-[144px] object-cover sm:rounded-[20px] rounded-[10px]">
                     <div class="sm:px-4 px-2 sm:py-4 py-2 sm:pt-8 pt-3">
@@ -908,11 +884,11 @@
                         <p class="sm:text-sm text-[10px] text-deep-black2 mb-3">24th January, 2023</p>
                         <p class="sm:text-sm text-[10px] text-deep-black">Lorem ipsum dolor sit amet, ipsum dolor sit
                             amet ipsum dolor
-                            sit amet... <span class="text-deep-green font-semibold">see more</span></p>
+                            sit amet... <span class="text-deep-green font-bold">See more</span></p>
                     </div>
                 </div>
                 <div
-                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] md:w-[calc(50%/2-10px)] sm:h-[430px] lg:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden bg-white shadow-custom-shadow7 sm:mb-8 mb-3 hidden md:block">
+                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] md:w-[calc(50%/2-10px)] sm:h-[430px] lg:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden md:bg-white bg-transparent shadow-custom-shadow7 sm:mb-8 mb-3 hidden md:block">
                     <img src="assets/images/blog-6.jpg" alt=""
                         class="w-full sm:h-[235px] h-[144px] object-cover sm:rounded-[20px] rounded-[10px]">
                     <div class="sm:px-4 px-2 sm:py-4 py-2 sm:pt-8 pt-3">
@@ -920,11 +896,11 @@
                         <p class="sm:text-sm text-[10px] text-deep-black2 mb-3">24th January, 2023</p>
                         <p class="sm:text-sm text-[10px] text-deep-black">Lorem ipsum dolor sit amet, ipsum dolor sit
                             amet ipsum dolor
-                            sit amet... <span class="text-deep-green font-semibold">see more</span></p>
+                            sit amet... <span class="text-deep-green font-bold">See more</span></p>
                     </div>
                 </div>
                 <div
-                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] md:w-[calc(50%/2-10px)] sm:h-[430px] lg:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden bg-white shadow-custom-shadow7 sm:mb-8 mb-3 hidden md:block">
+                    class="w-[calc(50%-5px)] sm:w-[calc(50%-10px)] md:w-[calc(50%/2-10px)] sm:h-[430px] lg:h-[410px] h-[263px] sm:rounded-[25px] rounded-[10px] overflow-hidden md:bg-white bg-transparent shadow-custom-shadow7 sm:mb-8 mb-3 hidden md:block">
                     <img src="assets/images/blog7.jpg" alt=""
                         class="w-full sm:h-[235px] h-[144px] object-cover sm:rounded-[20px] rounded-[10px]">
                     <div class="sm:px-4 px-2 sm:py-4 py-2 sm:pt-8 pt-3">
@@ -932,7 +908,7 @@
                         <p class="sm:text-sm text-[10px] text-deep-black2 mb-3">24th January, 2023</p>
                         <p class="sm:text-sm text-[10px] text-deep-black">Lorem ipsum dolor sit amet, ipsum dolor sit
                             amet ipsum dolor
-                            sit amet... <span class="text-deep-green font-semibold">see more</span></p>
+                            sit amet... <span class="text-deep-green font-bold">See more</span></p>
                     </div>
                 </div>
             </div>
