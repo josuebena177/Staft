@@ -35,30 +35,113 @@
     <section class="sm:py-14 py-6 relative">
         <div class="firstRadial absolute"></div>
         <div class="content">
-            <h1 class="text-[24px] sm:text-[30px] md:text-[40px] font-aeonik font-semibold text-center sm:mb-16 mb-8">Search Active
+            <h1 class="text-[24px] sm:text-[30px] md:text-[40px] font-aeonik font-semibold text-center sm:mb-16 mb-8">
+                Search Active
                 <span
                     class="text-white bg-deep-green px-2.5 rounded-lg inline-block sm:leading-10 leading-8 changeText">Sales</span>
                 Job Seekers
                 <br class="hidden sm:block"> Looking for Employment
             </h1>
             <div class="w-full max-w-[910px] mx-auto shadow-custom-shadow1 bg-white rounded-[30px] sm:mb-10 mb-6">
-                <div
-                    class="flex items-center justify-between w-full shadow-custom-shadow2 sm:py-4 py-2 sm:px-5 px-2.5 bg-white rounded-[30px]">
+                <div class="w-full shadow-custom-shadow2 sm:py-4 py-2 sm:px-5 px-2.5 bg-white rounded-[30px]">
                     <div
-                        class="w-[calc(70%-23px-7px)] sm:w-[calc(70%-31px-25px)] sm:h-[62px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 sm:text-lg text-sm bg-light-black2">
-                        <select class="w-full h-full outline-none border-0 bg-light-black2">
-                            <option value="I am looking to hire" selected>I am looking to hire</option>
-                            <option value="Option 1">Option 1</option>
-                            <option value="Option 2">Option 2</option>
-                            <option value="Option 3">Option 3</option>
-                        </select>
+                        class="flex items-center justify-between">
+                        <div
+                            class="w-[calc(70%-23px-7px)] sm:w-[calc(70%-31px-25px)] sm:h-[62px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:text-lg text-sm bg-light-black2 relative">
+                            <div
+                                class="lookingFor w-full h-full outline-none border-0 bg-light-black2 flex items-center justify-between sm:px-5 px-2 sm:rounded-[15px] rounded-[10px] cursor-pointer">
+                                <span class="text-deep-black4 text-lg w-full block pr-2 truncate lookingText">I am
+                                    looking to
+                                    hire</span>
+                                <img src="assets/images/arrow-down-big.svg" alt="">
+                            </div>
+                            <div
+                                class="toHire w-full h-fit py-[11px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] bg-light-black2 absolute left-0 top-[65px] z-10">
+                                <div
+                                    class="hireType sm:text-lg text-sm py-[11px] px-8 flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                    <span> Sales </span>
+                                    <img src="assets/images/arrow-right-big.svg" alt="">
+                                    <div
+                                        class="hireLevels w-[306px] h-fit py-[11px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] bg-light-black2 absolute top-5 left-[288px]">
+                                        <div
+                                            class="hireLevelItem sm:text-lg text-sm py-[11px] px-8 flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                            <span> Entry-Level </span>
+                                            <img src="assets/images/arrow-right-big.svg" alt="">
+
+                                            <div
+                                                class="hireSelects w-[448px] h-fit py-[8px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] bg-light-black2 absolute top-9 left-[172px]">
+                                                <div
+                                                    class="py-[10px] px-8 flex items-center justify-between cursor-pointer">
+                                                    <label class="custom-checkbox">
+                                                        <small class=" sm:text-lg text-sm">Customer Service
+                                                            Representative</small>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="py-[10px] px-8 flex items-center justify-between cursor-pointer">
+                                                    <label class="custom-checkbox sm:text-lg text-sm">
+                                                        <small class=" sm:text-lg text-sm">Retail Sales
+                                                            Representative</small>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="py-[10px] px-8 flex items-center justify-between cursor-pointer">
+                                                    <label class="custom-checkbox sm:text-lg text-sm">
+                                                        <small class=" sm:text-lg text-sm">Internet Sales
+                                                            Representative</small>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="py-[10px] px-8 flex items-center justify-between cursor-pointer">
+                                                    <label class="custom-checkbox sm:text-lg text-sm">
+                                                        <small class=" sm:text-lg text-sm">General Sales
+                                                            Associate</small>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="hireLevelItem sm:text-lg text-sm py-[11px] px-8 flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                            <span> Mid-Level </span>
+                                            <img src="assets/images/arrow-right-big.svg" alt="">
+                                        </div>
+                                        <div
+                                            class="hireLevelItem sm:text-lg text-sm py-[11px] px-8 flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                            <span> Senior-Level </span>
+                                            <img src="assets/images/arrow-right-big.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="hireType sm:text-lg text-sm py-[11px] px-8 flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                    <span> General </span>
+                                    <img src="assets/images/arrow-right-big.svg" alt="">
+                                </div>
+                                <div
+                                    class="hireType sm:text-lg text-sm py-[11px] px-8 flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                    <span> Administrative </span>
+                                    <img src="assets/images/arrow-right-big.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="text" placeholder="Zip Code"
+                            class="w-[calc(30%-23px-7px)] sm:w-[calc(30%-31px-25px)] sm:h-[62px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 sm:text-lg text-sm outline-none bg-light-black2">
+                        <button
+                            class="w-[46px] sm:w-[62px] sm:h-[62px] h-[46px] rounded-full border-0 grid place-items-center bg-deep-green">
+                            <img src="assets/images/search.svg" alt="" class="sm:w-auto w-[20px]">
+                        </button>
                     </div>
-                    <input type="text" placeholder="Zip Code"
-                        class="w-[calc(30%-23px-7px)] sm:w-[calc(30%-31px-25px)] sm:h-[62px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 sm:text-lg text-sm outline-none bg-light-black2">
-                    <button
-                        class="w-[46px] sm:w-[62px] sm:h-[62px] h-[46px] rounded-full border-0 grid place-items-center bg-deep-green">
-                        <img src="assets/images/search.svg" alt="" class="sm:w-auto w-[20px]">
-                    </button>
+                    <ul class="selectItemContainer flex items-center">
+                        
+                    </ul>
                 </div>
             </div>
             <p class="sm:text-lg text-sm font-medium text-center sm:mb-10 mb-3">Are you looking for a job? <a href="#"
@@ -861,9 +944,11 @@
     </section>
 
     <section class="pb-28 pt-8 relative">
-        <div class="content flex items-center sm:flex-row flex-col relative px-0 sm:px-[32px] md:px-[15px] lg:px-[5px] md:pr-0">
+        <div
+            class="content flex items-center sm:flex-row flex-col relative px-0 sm:px-[32px] md:px-[15px] lg:px-[5px] md:pr-0">
             <div class="sm:w-[52%] w-full sm:mb-0 mb-8 px-[32px] sm:px-0 sm:pr-2">
-                <h2 class="sm:text-[40px] text-[24px] font-bold sm:mb-7 mb-3 sm:leading-[2.7rem] leading-[2rem]">Staft follows
+                <h2 class="sm:text-[40px] text-[24px] font-bold sm:mb-7 mb-3 sm:leading-[2.7rem] leading-[2rem]">Staft
+                    follows
                     you<br>anywhere</h2>
                 <p class="sm:text-[18px] text-sm text-deep-black sm:mb-10 mb-5 leading-7">
                     Staft streamlines the hiring process for thousands of employers by connecting them with targeted,
@@ -1030,13 +1115,15 @@
                 </ul>
             </div>
 
-            <p class="text-xs font-medium text-white mt-[62px] md:hidden">Copyright 2024© Staft | All Right Reserved.</p>
+            <p class="text-xs font-medium text-white mt-[62px] md:hidden">Copyright 2024© Staft | All Right Reserved.
+            </p>
         </div>
     </footer>
 
 
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/home.js"></script>
 </body>
 
 </html>

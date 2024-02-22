@@ -209,6 +209,120 @@ section {
   }
 }
 
+/* custom checkbox styles */
+
+/* Customize the label (the container) */
+
+.custom-checkbox {
+  height: 24px;
+  display: block;
+  position: relative;
+  padding-left: 22px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1.3px solid #BCBABA;
+}
+
+/* On mouse-over, add a grey background color */
+
+/* .custom-checkbox:hover input~.checkmark {
+    background-color: #ccc;
+} */
+
+/* When the checkbox is checked, add a blue background */
+
+.custom-checkbox input:checked~.checkmark {
+  background-color: #05494C;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+
+.custom-checkbox input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.custom-checkbox .checkmark:after {
+  left: 4.5px;
+  top: 1.5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* custom checkbox styles ends */
+
+.toHire {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.toHire.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lookingFor:hover .toHire {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.hireLevels {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hireSelects {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hireType:hover .hireLevels {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.hireLevelItem:hover .hireSelects {
+  opacity: 1;
+  pointer-events: all;
+}
+
 @media (max-width: 1280px) {
   .content {
     padding: 10px 15px
@@ -834,6 +948,14 @@ video {
   left: -7px;
 }
 
+.left-\[172px\] {
+  left: 172px;
+}
+
+.left-\[288px\] {
+  left: 288px;
+}
+
 .left-\[50\%\] {
   left: 50%;
 }
@@ -862,8 +984,20 @@ video {
   top: 50%;
 }
 
+.top-5 {
+  top: 1.25rem;
+}
+
+.top-9 {
+  top: 2.25rem;
+}
+
 .top-\[50\%\] {
   top: 50%;
+}
+
+.top-\[65px\] {
+  top: 65px;
 }
 
 .z-10 {
@@ -1044,6 +1178,18 @@ video {
   margin-top: 62px;
 }
 
+.ml-0\.5 {
+  margin-left: 0.125rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-1\.5 {
+  margin-left: 0.375rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -1220,6 +1366,10 @@ video {
   width: 29px;
 }
 
+.w-\[306px\] {
+  width: 306px;
+}
+
 .w-\[31\%\] {
   width: 31%;
 }
@@ -1234,6 +1384,10 @@ video {
 
 .w-\[40px\] {
   width: 40px;
+}
+
+.w-\[448px\] {
+  width: 448px;
 }
 
 .w-\[46px\] {
@@ -1385,6 +1539,16 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
 }
 
 .rounded-\[10px\] {
@@ -1561,6 +1725,11 @@ video {
   padding-right: 1.75rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-\[2px\] {
   padding-left: 2px;
   padding-right: 2px;
@@ -1631,6 +1800,11 @@ video {
   padding-bottom: 10px;
 }
 
+.py-\[11px\] {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
 .py-\[12px\] {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -1654,6 +1828,11 @@ video {
 .py-\[5px\] {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.py-\[8px\] {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .pb-2 {
@@ -1706,6 +1885,10 @@ video {
 
 .pt-\[220px\] {
   padding-top: 220px;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .text-center {
@@ -1800,6 +1983,11 @@ video {
   color: rgb(136 136 136 / var(--tw-text-opacity));
 }
 
+.text-deep-black4 {
+  --tw-text-opacity: 1;
+  color: rgb(188 186 186 / var(--tw-text-opacity));
+}
+
 .text-deep-green {
   --tw-text-opacity: 1;
   color: rgb(5 73 76 / var(--tw-text-opacity));
@@ -1813,6 +2001,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .shadow-custom-shadow1 {
@@ -1866,6 +2059,15 @@ video {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
@@ -2311,6 +2513,10 @@ video {
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mr-4 {
+    margin-right: 1rem;
   }
 
   .md\:block {
