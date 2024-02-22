@@ -345,6 +345,15 @@ section {
   display: block;
 }
 
+.onlineAnim {
+  transition: .3s;
+  animation-name: onlineAnim;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
 @media (max-width: 1280px) {
   .content {
     padding: 10px 15px
@@ -405,6 +414,24 @@ section {
 
   .scrollContainer {
     height: unset
+  }
+}
+
+@keyframes onlineAnim {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .2;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
@@ -1036,6 +1063,10 @@ video {
   z-index: 10;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -1050,10 +1081,6 @@ video {
 
 .z-\[101\] {
   z-index: 101;
-}
-
-.z-20 {
-  z-index: 20;
 }
 
 .mx-0 {
