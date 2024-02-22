@@ -290,6 +290,15 @@ section {
 
 /* custom checkbox styles ends */
 
+.lookingOverlay {
+  pointer-events: none;
+}
+
+.lookingOverlay.active {
+  pointer-events: all;
+  z-index: 10;
+}
+
 .toHire {
   opacity: 0;
   pointer-events: none;
@@ -1043,6 +1052,10 @@ video {
   z-index: 101;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -1115,10 +1128,6 @@ video {
 
 .mb-\[-160px\] {
   margin-bottom: -160px;
-}
-
-.mb-\[100px\] {
-  margin-bottom: 100px;
 }
 
 .me-2 {
@@ -1702,6 +1711,10 @@ video {
   background-color: #00000076;
 }
 
+.bg-\[\#0000\] {
+  background-color: #0000;
+}
+
 .bg-deep-green {
   --tw-bg-opacity: 1;
   background-color: rgb(5 73 76 / var(--tw-bg-opacity));
@@ -1819,6 +1832,11 @@ video {
   padding-right: 3px;
 }
 
+.px-\[40px\] {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .px-\[41px\] {
   padding-left: 41px;
   padding-right: 41px;
@@ -1904,11 +1922,6 @@ video {
   padding-bottom: 8px;
 }
 
-.px-\[40px\] {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1990,6 +2003,10 @@ video {
   font-size: 12px;
 }
 
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .text-\[24px\] {
   font-size: 24px;
 }
@@ -2013,18 +2030,9 @@ video {
   line-height: 1.25rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[20px\] {
-  font-size: 20px;
 }
 
 .font-bold {
@@ -2061,6 +2069,10 @@ video {
 
 .leading-\[2rem\] {
   line-height: 2rem;
+}
+
+.text-\[sm\] {
+  color: sm;
 }
 
 .text-black {
@@ -2101,10 +2113,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[sm\] {
-  color: sm;
 }
 
 .shadow-custom-shadow1 {
@@ -2232,13 +2240,13 @@ video {
     padding-right: 0.625rem;
   }
 
+  .xs\:text-\[24px\] {
+    font-size: 24px;
+  }
+
   .xs\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .xs\:text-\[24px\] {
-    font-size: 24px;
   }
 }
 
@@ -2299,8 +2307,8 @@ video {
     margin-bottom: 2rem;
   }
 
-  .sm\:mb-\[200px\] {
-    margin-bottom: 200px;
+  .sm\:mb-\[150px\] {
+    margin-bottom: 150px;
   }
 
   .sm\:mb-\[34px\] {
@@ -2325,10 +2333,6 @@ video {
 
   .sm\:mt-\[-200px\] {
     margin-top: -200px;
-  }
-
-  .sm\:mb-\[150px\] {
-    margin-bottom: 150px;
   }
 
   .sm\:block {

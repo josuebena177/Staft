@@ -266,6 +266,13 @@ section {
 
 
 
+.lookingOverlay {
+    pointer-events: none;
+}
+.lookingOverlay.active {
+    pointer-events: all;
+    z-index: 10;
+}
 .toHire {
     opacity: 0;
     pointer-events: none;

@@ -5,6 +5,7 @@ const hireLevels = document.querySelectorAll(".hireLevels")
 const hireSelects = document.querySelectorAll(".hireSelects")
 const lookingText = document.querySelector(".lookingText")
 const selectItemContainer = document.querySelector(".selectItemContainer")
+const lookingOverlay = document.querySelector(".lookingOverlay")
 
 const doneBtn1 = document.querySelector(".doneBtn1")
 
@@ -15,22 +16,39 @@ const hireSelectLabels = document.querySelectorAll(".hireSelects label")
 lookingFor.addEventListener("click", (event) => {
     event.stopPropagation();
     toHire.classList.add("active")
+    lookingOverlay.classList.add("active")
+    console.log('man1');
 })
 hireType.forEach((item, i) => {
     item.addEventListener("click", (event) => {
         event.stopPropagation();
         hireLevels[i].classList.add("active")
+        console.log('man2');
     })
     const singleHireLevel = item.querySelector(".hireLevels")
     singleHireLevel?.querySelectorAll(".hireLevelItem").forEach((levItem, levInd) => {
         levItem.addEventListener("click", (event) => {
             event.stopPropagation();
             levItem.querySelector(".hireSelects")?.classList.add("active")
+            console.log('man3');
         })
     })
 })
 
-doneBtn1.addEventListener("click", () => {
+doneBtn1.addEventListener("click", (event) => {
+    event.stopPropagation()
+    lookingOverlay.classList.remove("active")
+    toHire.classList.remove("active")
+    hireLevels.forEach(item => {
+        item.classList.remove("active")
+    })
+    hireSelects.forEach(item => {
+        item.classList.remove("active")
+    })
+})
+lookingOverlay.addEventListener("click", (event) => {
+    event.stopPropagation()
+    lookingOverlay.classList.remove("active")
     toHire.classList.remove("active")
     hireLevels.forEach(item => {
         item.classList.remove("active")
