@@ -2103,6 +2103,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[sm\] {
+  color: sm;
+}
+
 .shadow-custom-shadow1 {
   --tw-shadow: 16px 16px 8px 0px rgba(0, 0, 0, 0.1);
   --tw-shadow-colored: 16px 16px 8px 0px var(--tw-shadow-color);
@@ -2906,6 +2910,11 @@ video {
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .md\:font-semibold {

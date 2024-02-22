@@ -62,7 +62,7 @@ doneBtn1.addEventListener("click", () => {
         }
     })
     console.log(selectedItems);
-    lookingText.innerHTML = `<p class="text-lg w-full block pr-2 truncate text-black">${selectedItems}</p>`
+    lookingText.innerHTML = `<p class="sm:text-lg xs:text-sm text-[10px] w-full block pr-2 truncate text-black">${selectedItems}</p>`
 
     const selectedShow = selectedItems.map(val => {
         return (
