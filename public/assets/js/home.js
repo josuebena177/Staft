@@ -17,20 +17,17 @@ lookingFor.addEventListener("click", (event) => {
     event.stopPropagation();
     toHire.classList.add("active")
     lookingOverlay.classList.add("active")
-    console.log('man1');
 })
 hireType.forEach((item, i) => {
     item.addEventListener("click", (event) => {
         event.stopPropagation();
         hireLevels[i].classList.add("active")
-        console.log('man2');
     })
     const singleHireLevel = item.querySelector(".hireLevels")
     singleHireLevel?.querySelectorAll(".hireLevelItem").forEach((levItem, levInd) => {
         levItem.addEventListener("click", (event) => {
             event.stopPropagation();
             levItem.querySelector(".hireSelects")?.classList.add("active")
-            console.log('man3');
         })
     })
 })
@@ -80,7 +77,11 @@ doneBtn1.addEventListener("click", () => {
         }
     })
     console.log(selectedItems);
-    lookingText.innerHTML = `<p class="sm:text-lg xs:text-sm text-[10px] w-full block pr-2 truncate text-black">${selectedItems}</p>`
+    if (selectedItems.length > 0) {
+        lookingText.innerHTML = `<p class="sm:text-lg xs:text-sm text-[10px] w-full block pr-2 truncate text-black">${selectedItems}</p>`
+    } else {
+        lookingText.innerHTML = `<span class="text-deep-black4 sm:text-lg xs:text-sm text-[10px] w-full block">I am looking to hire</span>`
+    }
 
     const selectedShow = selectedItems.map(val => {
         return (
