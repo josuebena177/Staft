@@ -2952,6 +2952,10 @@ video {
     font-weight: 600;
   }
 
+  .md\:font-normal {
+    font-weight: 400;
+  }
+
   .md\:text-deep-black3 {
     --tw-text-opacity: 1;
     color: rgb(136 136 136 / var(--tw-text-opacity));
