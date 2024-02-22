@@ -26,6 +26,7 @@ module.exports = {
         'deep-black2': '#666666',
         'deep-black3': '#888888',
         'deep-black4': '#BCBABA',
+        'deep-black5': '#EFECEC',
         'deep-green': '#05494C',
         'light-green': '#05494c0d',
         'light-black1': '#B1B0B0',

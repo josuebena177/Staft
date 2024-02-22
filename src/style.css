@@ -293,6 +293,27 @@ section {
 }
 
 
+
+
+
+
+.requestOverflow {
+    display: none;
+}
+.requestOverflow.active {
+    display: block;
+}
+
+.requestInt {
+    display: none;
+}
+.requestInt.active {
+    display: block;
+}
+
+
+
+
 @media (max-width: 1280px) {
     .content {
         padding: 10px 15px

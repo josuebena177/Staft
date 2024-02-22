@@ -615,7 +615,8 @@
                             <div class="flex items-center justify-between md:pl-0 pl-[95px] md:mb-1 mb-0">
                                 <h3 class="md:text-2xl sm:text-base text-sm lg:font-bold font-semibold flex">Adams G.
                                     <img src="../assets/images/yellow-tick.svg" alt=""
-                                        class="w-3 lg:w-8 block lg:ml-4 ml-2"></h3>
+                                        class="w-3 lg:w-8 block lg:ml-4 ml-2">
+                                </h3>
                             </div>
                             <div class="w-full flex items-center justify-between md:pl-0 pl-[95px] md:mb-2 mb-0">
                                 <h4 class="lg:text-xl text-[10px]">Sales</h4>
@@ -665,7 +666,7 @@
                                         <img src="../assets/images/chat-green.svg" alt="" class="w-4 lg:w-auto">
                                     </button>
                                     <button
-                                        class="lg:px-4 px-2 lg:h-[60px] h-[35px] bg-deep-green border-2 border-deep-green lg:text-lg text-xs text-white font-bold rounded-[10px] ml-3">Request
+                                        class="reqInterview lg:px-4 px-2 lg:h-[60px] h-[35px] bg-deep-green border-2 border-deep-green lg:text-lg text-xs text-white font-bold rounded-[10px] ml-3">Request
                                         Interview</button>
                                 </div>
                             </div>
@@ -972,9 +973,61 @@
 
 
 
+    <!-- modal starts -->
+    <div class="requestOverflow w-screen h-screen bg-[#00000076] cursor-pointer fixed top-0 left-0 z-[100]"></div>
+    <div
+        class="requestInt w-full max-w-[762px] h-[478px] rounded-[25px] bg-white px-8 py-10 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[101]">
+        <h2 class="text-2xl font-bold text-black mb-5 flex items-center justify-between">
+            Request Interview
+            <img src="../assets/images/close-gray.svg" alt="" class="closeModBtn cursor-pointer">
+        </h2>
+        <div class="relative w-full mb-6  before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-1 before:rounded-md before:bg-deep-black5">
+            <ul
+                class="w-full flex relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-1/3 before:h-1 before:rounded-md before:bg-deep-green">
+                <li class="w-1/3 relative pb-3">
+                    <div
+                        class="grid place-items-center w-[18px] h-[18px] rounded-full border-[1px] border-deep-green bg-deep-green mb-1.5 mx-auto">
+                        <img src="../assets/images/lock-white.svg" alt="">
+                    </div>
+                    <p class="text-xs font-bold text-center">Job Details</p>
+                </li>
+                <li class="w-1/3 relative pb-3">
+                    <div
+                        class="grid place-items-center w-[18px] h-[18px] rounded-full border-[1px] border-deep-black3 bg-transparent mb-1.5 mx-auto">
+                        <img src="../assets/images/schedule-gray.svg" alt="">
+                    </div>
+                    <p class="text-xs font-bold text-center text-deep-black3">Schedule</p>
+                </li>
+                <li class="w-1/3 relative pb-3">
+                    <div
+                        class="grid place-items-center w-[18px] h-[18px] rounded-full border-[1px] border-deep-black3 bg-transparent mb-1.5 mx-auto">
+                        <img src="../assets/images/review-gray.svg" alt="">
+                    </div>
+                    <p class="text-xs font-bold text-center text-deep-black3">Review</p>
+                </li>
+            </ul>
+        </div>
+        <div class="progressWrap">
+            <h3 class="text-sm font-semibold mb-4">Job Details</h3>
+            <div class="flex flex-wrap justify-between">
+                <div class="w-[calc(50%-4px)] h-[46px] rounded-[15px] border-[1px] border-light-black1 bg-light-black2">
+                    <div class="w-full h-full flex items-center justify-between px-6 cursor-pointer">
+                        <p class="text-deep-black4">Job Position</p>
+                        <img src="../assets/images/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal ends -->
+
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/marketplace.js"></script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {
