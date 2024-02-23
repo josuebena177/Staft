@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -174,8 +175,7 @@
                         <p class="sm:text-lg text-[10px] font-medium text-deep-black2">Trending Searches:</p>
                     </div> -->
                     <ul class="flex items-center justify-center flex-wrap">
-                        <li
-                            class="flex items-center mb-4">
+                        <li class="flex items-center mb-4">
                             <img src="assets/images/trending.svg" alt="" class="sm:mr-3 mr-1 sm:w-auto w-[12px]">
                             <p class="sm:text-lg text-[10px] font-medium text-deep-black2">Trending Searches:</p>
                         </li>
@@ -196,561 +196,593 @@
 
 
                 <div class="flex items-start justify-between flex-wrap sm:mb-10 mb-6">
-                    <div
-                        class="personBox w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative">
-                        <div
-                            class="w-full lg:h-[214px] md:h-[180px] h-[105px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
-                            <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
-                            <button
-                                class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10 hidden md:block">
-                                <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
-                            </button>
-                        </div>
-                        <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
-                            <div class="flex items-center justify-between">
-                                <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
-                                        src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
-                            </div>
-                            <div class="flex items-center justify-between mb-1">
-                                <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
-                                <div class="flex items-center">
-                                    <img src="assets/images/green-dot.svg" alt="" class="mr-1 w-2 sm:w-auto onlineAnim">
-                                    <p class="lg:text-xs text-[10px]">Online Now</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center md:mb-3.5 mb-1.5">
-                                <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px]">Senior Level</p>
-                            </div>
-                            <div class="flex items-center md:mb-2 mb-1">
-                                <div class="flex items-center mr-5">
-                                    <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
-                                </div>
-                                <div class="md:flex hidden items-center me-2">
-                                    <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
-                                </div>
-                            </div>
-                            <div class="md:flex hidden items-center md:mb-2 mb-1">
-                                <img src="assets/images/lang.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
-                            </div>
-                            <div class="flex items-center md:mb-4 mb-2">
-                                <img src="assets/images/cap.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
-                            </div>
-                            <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div
+                                class="personBox swiper-slide w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[25px] rounded-[32px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative">
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
-                                        Retail Sales</p>
+                                    class="w-full h-[214px] sm:h-[295px] md:h-[180px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
+                                    <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
+                                    <button
+                                        class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10 hidden md:block">
+                                        <img src="assets/images/play-person.png" alt=""
+                                            class="w-[27px] md:w-[28px] lg:w-auto">
+                                    </button>
                                 </div>
+                                <div class="py-6 px-[34px] md:px-4">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
+                                                src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
+                                    </div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
+                                        <div class="flex items-center">
+                                            <img src="assets/images/green-dot.svg" alt=""
+                                                class="mr-1 w-2 sm:w-auto onlineAnim">
+                                            <p class="lg:text-xs text-[10px]">Online Now</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center md:mb-3.5 mb-1.5">
+                                        <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px]">Senior Level</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-2 mb-1">
+                                        <div class="flex items-center mr-5">
+                                            <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
+                                        </div>
+                                        <div class="md:flex hidden items-center me-2">
+                                            <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
+                                        </div>
+                                    </div>
+                                    <div class="md:flex hidden items-center md:mb-2 mb-1">
+                                        <img src="assets/images/lang.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-4 mb-2">
+                                        <img src="assets/images/cap.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
+                                                Retail Sales</p>
+                                        </div>
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
+                                        </div>
+                                        <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                            <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345
+                                            </p>
+                                        </div>
+                                        <a href="#" class="md:flex hidden items-center">
+                                            <span
+                                                class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                            <img src="assets/images/arrow-right.svg" alt=""
+                                                class="lg:w-auto sm:w-[14px] w-[10px]">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="personBox swiper-slide w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[25px] rounded-[32px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative">
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
+                                    class="w-full h-[214px] sm:h-[295px] md:h-[180px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
+                                    <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
+                                    <button
+                                        class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10 hidden md:block">
+                                        <img src="assets/images/play-person.png" alt=""
+                                            class="w-[27px] md:w-[28px] lg:w-auto">
+                                    </button>
                                 </div>
-                                <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center">
-                                    <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
-                                    <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345</p>
+                                <div class="md:py-4 py-6 px-3">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
+                                                src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
+                                    </div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
+                                        <div class="flex items-center">
+                                            <img src="assets/images/green-dot.svg" alt=""
+                                                class="mr-1 w-2 sm:w-auto onlineAnim">
+                                            <p class="lg:text-xs text-[10px]">Online Now</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center md:mb-3.5 mb-1.5">
+                                        <img src="assets/images/entry-sign.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px]">Entry Level</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-2 mb-1">
+                                        <div class="flex items-center mr-5">
+                                            <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
+                                        </div>
+                                        <div class="md:flex hidden items-center me-2">
+                                            <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
+                                        </div>
+                                    </div>
+                                    <div class="md:flex hidden items-center md:mb-2 mb-1">
+                                        <img src="assets/images/lang.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-4 mb-2">
+                                        <img src="assets/images/cap.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
+                                                Retail Sales</p>
+                                        </div>
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
+                                        </div>
+                                        <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                            <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345
+                                            </p>
+                                        </div>
+                                        <a href="#" class="md:flex hidden items-center">
+                                            <span
+                                                class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                            <img src="assets/images/arrow-right.svg" alt=""
+                                                class="lg:w-auto sm:w-[14px] w-[10px]">
+                                        </a>
+                                    </div>
                                 </div>
-                                <a href="#" class="md:flex hidden items-center">
-                                    <span
-                                        class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
-                                    <img src="assets/images/arrow-right.svg" alt=""
-                                        class="lg:w-auto sm:w-[14px] w-[10px]">
-                                </a>
                             </div>
-                        </div>
-                    </div>
-                    <div
-                        class="personBox w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative">
-                        <div
-                            class="w-full lg:h-[214px] md:h-[180px] h-[105px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
-                            <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
-                            <button
-                                class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10 hidden md:block">
-                                <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
-                            </button>
-                        </div>
-                        <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
-                            <div class="flex items-center justify-between">
-                                <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
-                                        src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
-                            </div>
-                            <div class="flex items-center justify-between mb-1">
-                                <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
-                                <div class="flex items-center">
-                                    <img src="assets/images/green-dot.svg" alt="" class="mr-1 w-2 sm:w-auto onlineAnim">
-                                    <p class="lg:text-xs text-[10px]">Online Now</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center md:mb-3.5 mb-1.5">
-                                <img src="assets/images/entry-sign.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px]">Entry Level</p>
-                            </div>
-                            <div class="flex items-center md:mb-2 mb-1">
-                                <div class="flex items-center mr-5">
-                                    <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
-                                </div>
-                                <div class="md:flex hidden items-center me-2">
-                                    <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
-                                </div>
-                            </div>
-                            <div class="md:flex hidden items-center md:mb-2 mb-1">
-                                <img src="assets/images/lang.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
-                            </div>
-                            <div class="flex items-center md:mb-4 mb-2">
-                                <img src="assets/images/cap.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
-                            </div>
-                            <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
+                            <div
+                                class="personBox swiper-slide w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[25px] rounded-[32px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative">
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
-                                        Retail Sales</p>
-                                </div>
-                                <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
-                                </div>
-                                <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center">
-                                    <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
-                                    <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345</p>
-                                </div>
-                                <a href="#" class="md:flex hidden items-center">
-                                    <span
-                                        class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
-                                    <img src="assets/images/arrow-right.svg" alt=""
-                                        class="lg:w-auto sm:w-[14px] w-[10px]">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="personBox w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative">
-                        <div
-                            class="w-full lg:h-[214px] md:h-[180px] h-[105px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
-                            <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
-                            <!-- <button
+                                    class="w-full h-[214px] sm:h-[295px] md:h-[180px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
+                                    <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
+                                    <!-- <button
                             class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10 hidden md:block">
                             <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
                         </button> -->
-                        </div>
-                        <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
-                            <div class="flex items-center justify-between">
-                                <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G.</h3>
-                            </div>
-                            <div class="flex items-center justify-between mb-1">
-                                <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
-                                <div class="flex items-center">
-                                    <img src="assets/images/green-dot.svg" alt="" class="mr-1 w-2 sm:w-auto onlineAnim">
-                                    <p class="lg:text-xs text-[10px]">Online Now</p>
+                                </div>
+                                <div class="md:py-4 py-6 px-3">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G.</h3>
+                                    </div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
+                                        <div class="flex items-center">
+                                            <img src="assets/images/green-dot.svg" alt=""
+                                                class="mr-1 w-2 sm:w-auto onlineAnim">
+                                            <p class="lg:text-xs text-[10px]">Online Now</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center md:mb-3.5 mb-1.5">
+                                        <img src="assets/images/mid-sign.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px]">Mid Level</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-2 mb-1">
+                                        <div class="flex items-center mr-5">
+                                            <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
+                                        </div>
+                                        <div class="md:flex hidden items-center me-2">
+                                            <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
+                                        </div>
+                                    </div>
+                                    <div class="md:flex hidden items-center md:mb-2 mb-1">
+                                        <img src="assets/images/lang.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-4 mb-2">
+                                        <img src="assets/images/cap.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
+                                                Retail Sales</p>
+                                        </div>
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
+                                        </div>
+                                        <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                            <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345
+                                            </p>
+                                        </div>
+                                        <a href="#" class="md:flex hidden items-center">
+                                            <span
+                                                class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                            <img src="assets/images/arrow-right.svg" alt=""
+                                                class="lg:w-auto sm:w-[14px] w-[10px]">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex items-center md:mb-3.5 mb-1.5">
-                                <img src="assets/images/mid-sign.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px]">Mid Level</p>
-                            </div>
-                            <div class="flex items-center md:mb-2 mb-1">
-                                <div class="flex items-center mr-5">
-                                    <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
-                                </div>
-                                <div class="md:flex hidden items-center me-2">
-                                    <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
-                                </div>
-                            </div>
-                            <div class="md:flex hidden items-center md:mb-2 mb-1">
-                                <img src="assets/images/lang.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
-                            </div>
-                            <div class="flex items-center md:mb-4 mb-2">
-                                <img src="assets/images/cap.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
-                            </div>
-                            <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
+                            <div
+                                class="personBox swiper-slide w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[25px] rounded-[32px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative md:block hidden">
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
-                                        Retail Sales</p>
+                                    class="w-full h-[214px] sm:h-[295px] md:h-[180px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
+                                    <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
+                                    <button
+                                        class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10 hidden md:block">
+                                        <img src="assets/images/play-person.png" alt=""
+                                            class="w-[27px] md:w-[28px] lg:w-auto">
+                                    </button>
                                 </div>
+                                <div class="md:py-4 py-6 px-3">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
+                                                src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
+                                    </div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
+                                        <div class="flex items-center">
+                                            <p class="lg:text-xs text-[10px] text-deep-black3">Active 6 hrs ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center md:mb-3.5 mb-1.5">
+                                        <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px]">Senior Level</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-2 mb-1">
+                                        <div class="flex items-center mr-5">
+                                            <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
+                                        </div>
+                                        <div class="md:flex hidden items-center me-2">
+                                            <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
+                                        </div>
+                                    </div>
+                                    <div class="md:flex hidden items-center md:mb-2 mb-1">
+                                        <img src="assets/images/lang.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-4 mb-2">
+                                        <img src="assets/images/cap.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
+                                                Retail Sales</p>
+                                        </div>
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
+                                        </div>
+                                        <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                            <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345
+                                            </p>
+                                        </div>
+                                        <a href="#" class="md:flex hidden items-center">
+                                            <span
+                                                class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                            <img src="assets/images/arrow-right.svg" alt=""
+                                                class="lg:w-auto sm:w-[14px] w-[10px]">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="personBox swiper-slide w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[25px] rounded-[32px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative md:block hidden">
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
+                                    class="w-full h-[214px] sm:h-[295px] md:h-[180px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
+                                    <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
+                                    <button
+                                        class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10 hidden md:block">
+                                        <img src="assets/images/play-person.png" alt=""
+                                            class="w-[27px] md:w-[28px] lg:w-auto">
+                                    </button>
                                 </div>
-                                <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center">
-                                    <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
-                                    <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345</p>
+                                <div class="md:py-4 py-6 px-3">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
+                                                src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
+                                    </div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
+                                        <div class="flex items-center">
+                                            <p class="lg:text-xs text-[10px] text-deep-black3">Active 6 hrs ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center md:mb-3.5 mb-1.5">
+                                        <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px]">Senior Level</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-2 mb-1">
+                                        <div class="flex items-center mr-5">
+                                            <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
+                                        </div>
+                                        <div class="md:flex hidden items-center me-2">
+                                            <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
+                                        </div>
+                                    </div>
+                                    <div class="md:flex hidden items-center md:mb-2 mb-1">
+                                        <img src="assets/images/lang.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-4 mb-2">
+                                        <img src="assets/images/cap.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
+                                                Retail Sales</p>
+                                        </div>
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
+                                        </div>
+                                        <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                            <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345
+                                            </p>
+                                        </div>
+                                        <a href="#" class="md:flex hidden items-center">
+                                            <span
+                                                class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                            <img src="assets/images/arrow-right.svg" alt=""
+                                                class="lg:w-auto sm:w-[14px] w-[10px]">
+                                        </a>
+                                    </div>
                                 </div>
-                                <a href="#" class="md:flex hidden items-center">
-                                    <span
-                                        class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
-                                    <img src="assets/images/arrow-right.svg" alt=""
-                                        class="lg:w-auto sm:w-[14px] w-[10px]">
-                                </a>
                             </div>
-                        </div>
-                    </div>
-                    <div
-                        class="personBox w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative md:block hidden">
-                        <div
-                            class="w-full lg:h-[214px] md:h-[180px] h-[105px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
-                            <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
-                            <button
-                                class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10 hidden md:block">
-                                <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
-                            </button>
-                        </div>
-                        <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
-                            <div class="flex items-center justify-between">
-                                <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
-                                        src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
-                            </div>
-                            <div class="flex items-center justify-between mb-1">
-                                <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
-                                <div class="flex items-center">
-                                    <p class="lg:text-xs text-[10px] text-deep-black3">Active 6 hrs ago</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center md:mb-3.5 mb-1.5">
-                                <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px]">Senior Level</p>
-                            </div>
-                            <div class="flex items-center md:mb-2 mb-1">
-                                <div class="flex items-center mr-5">
-                                    <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
-                                </div>
-                                <div class="md:flex hidden items-center me-2">
-                                    <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
-                                </div>
-                            </div>
-                            <div class="md:flex hidden items-center md:mb-2 mb-1">
-                                <img src="assets/images/lang.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
-                            </div>
-                            <div class="flex items-center md:mb-4 mb-2">
-                                <img src="assets/images/cap.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
-                            </div>
-                            <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
+                            <div
+                                class="personBox swiper-slide w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[25px] rounded-[32px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative md:block hidden">
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
-                                        Retail Sales</p>
+                                    class="w-full h-[214px] sm:h-[295px] md:h-[180px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
+                                    <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
+                                    <button
+                                        class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10 hidden md:block">
+                                        <img src="assets/images/play-person.png" alt=""
+                                            class="w-[27px] md:w-[28px] lg:w-auto">
+                                    </button>
                                 </div>
+                                <div class="md:py-4 py-6 px-3">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G.</h3>
+                                    </div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
+                                        <div class="flex items-center">
+                                            <p class="lg:text-xs text-[10px] text-deep-black3">Active 6 hrs ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center md:mb-3.5 mb-1.5">
+                                        <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px]">Senior Level</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-2 mb-1">
+                                        <div class="flex items-center mr-5">
+                                            <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
+                                        </div>
+                                        <div class="md:flex hidden items-center me-2">
+                                            <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
+                                        </div>
+                                    </div>
+                                    <div class="md:flex hidden items-center md:mb-2 mb-1">
+                                        <img src="assets/images/lang.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-4 mb-2">
+                                        <img src="assets/images/cap.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
+                                                Retail Sales</p>
+                                        </div>
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
+                                        </div>
+                                        <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                            <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345
+                                            </p>
+                                        </div>
+                                        <a href="#" class="md:flex hidden items-center">
+                                            <span
+                                                class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                            <img src="assets/images/arrow-right.svg" alt=""
+                                                class="lg:w-auto sm:w-[14px] w-[10px]">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="personBox swiper-slide w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[25px] rounded-[32px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative">
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
-                                </div>
-                                <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center">
-                                    <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
-                                    <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345</p>
-                                </div>
-                                <a href="#" class="md:flex hidden items-center">
-                                    <span
-                                        class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
-                                    <img src="assets/images/arrow-right.svg" alt=""
-                                        class="lg:w-auto sm:w-[14px] w-[10px]">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="personBox w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative md:block hidden">
-                        <div
-                            class="w-full lg:h-[214px] md:h-[180px] h-[105px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
-                            <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
-                            <button
-                                class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10 hidden md:block">
-                                <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
-                            </button>
-                        </div>
-                        <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
-                            <div class="flex items-center justify-between">
-                                <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
-                                        src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
-                            </div>
-                            <div class="flex items-center justify-between mb-1">
-                                <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
-                                <div class="flex items-center">
-                                    <p class="lg:text-xs text-[10px] text-deep-black3">Active 6 hrs ago</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center md:mb-3.5 mb-1.5">
-                                <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px]">Senior Level</p>
-                            </div>
-                            <div class="flex items-center md:mb-2 mb-1">
-                                <div class="flex items-center mr-5">
-                                    <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
-                                </div>
-                                <div class="md:flex hidden items-center me-2">
-                                    <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
-                                </div>
-                            </div>
-                            <div class="md:flex hidden items-center md:mb-2 mb-1">
-                                <img src="assets/images/lang.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
-                            </div>
-                            <div class="flex items-center md:mb-4 mb-2">
-                                <img src="assets/images/cap.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
-                            </div>
-                            <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
-                                <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
-                                        Retail Sales</p>
-                                </div>
-                                <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
-                                </div>
-                                <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center">
-                                    <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
-                                    <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345</p>
-                                </div>
-                                <a href="#" class="md:flex hidden items-center">
-                                    <span
-                                        class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
-                                    <img src="assets/images/arrow-right.svg" alt=""
-                                        class="lg:w-auto sm:w-[14px] w-[10px]">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="personBox w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative md:block hidden">
-                        <div
-                            class="w-full lg:h-[214px] md:h-[180px] h-[105px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
-                            <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
-                            <button
-                                class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10 hidden md:block">
-                                <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
-                            </button>
-                        </div>
-                        <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
-                            <div class="flex items-center justify-between">
-                                <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G.</h3>
-                            </div>
-                            <div class="flex items-center justify-between mb-1">
-                                <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
-                                <div class="flex items-center">
-                                    <p class="lg:text-xs text-[10px] text-deep-black3">Active 6 hrs ago</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center md:mb-3.5 mb-1.5">
-                                <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px]">Senior Level</p>
-                            </div>
-                            <div class="flex items-center md:mb-2 mb-1">
-                                <div class="flex items-center mr-5">
-                                    <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
-                                </div>
-                                <div class="md:flex hidden items-center me-2">
-                                    <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
-                                </div>
-                            </div>
-                            <div class="md:flex hidden items-center md:mb-2 mb-1">
-                                <img src="assets/images/lang.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
-                            </div>
-                            <div class="flex items-center md:mb-4 mb-2">
-                                <img src="assets/images/cap.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
-                            </div>
-                            <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
-                                <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
-                                        Retail Sales</p>
-                                </div>
-                                <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
-                                </div>
-                                <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center">
-                                    <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
-                                    <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345</p>
-                                </div>
-                                <a href="#" class="md:flex hidden items-center">
-                                    <span
-                                        class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
-                                    <img src="assets/images/arrow-right.svg" alt=""
-                                        class="lg:w-auto sm:w-[14px] w-[10px]">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="personBox w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative">
-                        <div
-                            class="w-full lg:h-[214px] md:h-[180px] h-[105px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
-                            <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
-                            <!-- <button
+                                    class="w-full h-[214px] sm:h-[295px] md:h-[180px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
+                                    <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
+                                    <!-- <button
                             class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10 hidden md:block">
                             <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
                         </button> -->
-                        </div>
-                        <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
-                            <div class="flex items-center justify-between">
-                                <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
-                                        src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
-                            </div>
-                            <div class="flex items-center justify-between mb-1">
-                                <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
-                                <div class="flex items-center">
-                                    <img src="assets/images/green-dot.svg" alt="" class="mr-1 w-2 sm:w-auto onlineAnim">
-                                    <p class="lg:text-xs text-[10px]">Online Now</p>
+                                </div>
+                                <div class="md:py-4 py-6 px-3">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
+                                                src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
+                                    </div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
+                                        <div class="flex items-center">
+                                            <img src="assets/images/green-dot.svg" alt=""
+                                                class="mr-1 w-2 sm:w-auto onlineAnim">
+                                            <p class="lg:text-xs text-[10px]">Online Now</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center md:mb-3.5 mb-1.5">
+                                        <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px]">Senior Level</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-2 mb-1">
+                                        <div class="flex items-center mr-5">
+                                            <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
+                                        </div>
+                                        <div class="md:flex hidden items-center me-2">
+                                            <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
+                                        </div>
+                                    </div>
+                                    <div class="md:flex hidden items-center md:mb-2 mb-1">
+                                        <img src="assets/images/lang.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-4 mb-2">
+                                        <img src="assets/images/cap.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
+                                                Retail Sales</p>
+                                        </div>
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
+                                        </div>
+                                        <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                            <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345
+                                            </p>
+                                        </div>
+                                        <a href="#" class="md:flex hidden items-center">
+                                            <span
+                                                class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                            <img src="assets/images/arrow-right.svg" alt=""
+                                                class="lg:w-auto sm:w-[14px] w-[10px]">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex items-center md:mb-3.5 mb-1.5">
-                                <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px]">Senior Level</p>
-                            </div>
-                            <div class="flex items-center md:mb-2 mb-1">
-                                <div class="flex items-center mr-5">
-                                    <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
-                                </div>
-                                <div class="md:flex hidden items-center me-2">
-                                    <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
-                                </div>
-                            </div>
-                            <div class="md:flex hidden items-center md:mb-2 mb-1">
-                                <img src="assets/images/lang.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
-                            </div>
-                            <div class="flex items-center md:mb-4 mb-2">
-                                <img src="assets/images/cap.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
-                            </div>
-                            <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
+                            <div
+                                class="personBox swiper-slide w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[25px] rounded-[32px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative">
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
-                                        Retail Sales</p>
+                                    class="w-full h-[214px] sm:h-[295px] md:h-[180px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
+                                    <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
+                                    <button
+                                        class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10 hidden md:block">
+                                        <img src="assets/images/play-person.png" alt=""
+                                            class="w-[27px] md:w-[28px] lg:w-auto">
+                                    </button>
                                 </div>
-                                <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
+                                <div class="md:py-4 py-6 px-3">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
+                                                src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
+                                    </div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
+                                        <div class="flex items-center">
+                                            <img src="assets/images/green-dot.svg" alt=""
+                                                class="mr-1 w-2 sm:w-auto onlineAnim">
+                                            <p class="lg:text-xs text-[10px]">Online Now</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center md:mb-3.5 mb-1.5">
+                                        <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px]">Senior Level</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-2 mb-1">
+                                        <div class="flex items-center mr-5">
+                                            <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
+                                        </div>
+                                        <div class="md:flex hidden items-center me-2">
+                                            <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
+                                            <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
+                                        </div>
+                                    </div>
+                                    <div class="md:flex hidden items-center md:mb-2 mb-1">
+                                        <img src="assets/images/lang.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
+                                    </div>
+                                    <div class="flex items-center md:mb-4 mb-2">
+                                        <img src="assets/images/cap.svg" alt="" class="mr-2">
+                                        <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
+                                                Retail Sales</p>
+                                        </div>
+                                        <div
+                                            class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
+                                            <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
+                                        </div>
+                                        <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
+                                            <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345
+                                            </p>
+                                        </div>
+                                        <a href="#" class="md:flex hidden items-center">
+                                            <span
+                                                class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
+                                            <img src="assets/images/arrow-right.svg" alt=""
+                                                class="lg:w-auto sm:w-[14px] w-[10px]">
+                                        </a>
+                                    </div>
                                 </div>
-                                <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center">
-                                    <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
-                                    <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345</p>
-                                </div>
-                                <a href="#" class="md:flex hidden items-center">
-                                    <span
-                                        class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
-                                    <img src="assets/images/arrow-right.svg" alt=""
-                                        class="lg:w-auto sm:w-[14px] w-[10px]">
-                                </a>
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="personBox w-full md:w-[calc(100%/4-12px)] md:max-w-[295px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden border-[1px] border-light-black3 md:mb-10 mb-4 bg-white shadow-custom-shadow3 relative">
-                        <div
-                            class="w-full lg:h-[214px] md:h-[180px] h-[105px] lg:rounded-[32px] md:rounded-[20px] rounded-[15px] overflow-hidden">
-                            <img src="assets/images/man3.jpg" alt="" class="w-full h-full object-cover">
-                            <button
-                                class="border-0 bg-transparent outline-none absolute sm:bottom-5 bottom-2.5 sm:right-5 right-2.5 z-10 hidden md:block">
-                                <img src="assets/images/play-person.png" alt="" class="w-[27px] md:w-[28px] lg:w-auto">
-                            </button>
-                        </div>
-                        <div class="md:py-4 py-2 md:pb-6 pb-3 px-3">
-                            <div class="flex items-center justify-between">
-                                <h3 class="lg:text-lg sm:text-base text-sm font-semibold flex">Adams G. <img
-                                        src="assets/images/yellow-tick.svg" alt="" class="block ml-2"></h3>
-                            </div>
-                            <div class="flex items-center justify-between mb-1">
-                                <h4 class="lg:text-sm sm:text-xs text-[10px]">Sales</h4>
-                                <div class="flex items-center">
-                                    <img src="assets/images/green-dot.svg" alt="" class="mr-1 w-2 sm:w-auto onlineAnim">
-                                    <p class="lg:text-xs text-[10px]">Online Now</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center md:mb-3.5 mb-1.5">
-                                <img src="assets/images/senior-badge.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px]">Senior Level</p>
-                            </div>
-                            <div class="flex items-center md:mb-2 mb-1">
-                                <div class="flex items-center mr-5">
-                                    <img src="assets/images/dollar-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">$280,000 - $300,000</p>
-                                </div>
-                                <div class="md:flex hidden items-center me-2">
-                                    <img src="assets/images/full-time-sm.svg" alt="" class="mr-2">
-                                    <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
-                                </div>
-                            </div>
-                            <div class="md:flex hidden items-center md:mb-2 mb-1">
-                                <img src="assets/images/lang.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
-                            </div>
-                            <div class="flex items-center md:mb-4 mb-2">
-                                <img src="assets/images/cap.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
-                            </div>
-                            <div class="flex items-center md:mb-6 mb-3 md:mt-0 mt-3.5">
-                                <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] font-normal text-deep-black3">
-                                        Retail Sales</p>
-                                </div>
-                                <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[7px] px-[3px] rounded-[10px] border-[1px] border-deep-black3 sm:mr-2 mr-1">
-                                    <p class="lg:text-xs text-[8px] text-deep-black3">Internet Sales</p>
-                                </div>
-                                <p class="lg:text-xs text-[8px] font-semibold text-deep-black2">+ 3 more</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center">
-                                    <img src="assets/images/location.svg" alt="" class="mr-1 sm:w-auto w-[7px]">
-                                    <p class="lg:text-[10px] text-[8px] text-light-black4">Anytown, USA 12345</p>
-                                </div>
-                                <a href="#" class="md:flex hidden items-center">
-                                    <span
-                                        class="font-semibold text-deep-green lg:text-[16px] text-[12px] leading-[17px] border-b-[1px] border-b-deep-green mr-1">Contact</span>
-                                    <img src="assets/images/arrow-right.svg" alt=""
-                                        class="lg:w-auto sm:w-[14px] w-[10px]">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="swiper-pagination relative top-0 left-0 mx-auto mt-4"></div>
                 </div>
 
                 <button
@@ -1285,6 +1317,17 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 25,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 
 </html>
