@@ -1,5 +1,5 @@
 const bars = document.querySelector(".bars")
-const overlay = document.querySelector(".overlay")
+const closeHeader = document.querySelector(".closeHeader")
 const menu = document.querySelector(".menuList")
 
 const footerMenuItems = document.querySelectorAll(".footerMenuItem")
@@ -7,11 +7,9 @@ const footerMenuItems = document.querySelectorAll(".footerMenuItem")
 
 bars.addEventListener("click", () => {
     menu.classList.add("active")
-    overlay.classList.add("active")
 })
-overlay.addEventListener("click", () => {
+closeHeader.addEventListener("click", () => {
     menu.classList.remove("active")
-    overlay.classList.remove("active")
 })
 
 

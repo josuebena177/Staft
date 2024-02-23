@@ -368,12 +368,13 @@ section {
     }
 
     .menuList {
-        left: -300px;
-        transition: .3s;
+        display: none !important;
+        left: 0;
+        /* transition: .3s; */
     }
 
     .menuList.active {
-        left: 0;
+        display: block !important;
     }
 
     .overlay.active {

@@ -13,18 +13,22 @@
 
 <body>
     <div class="overlay w-screen h-screen bg-[#00000071] fixed md:hidden"></div>
-    <header class="py-5">
+    <header class="py-3 sm:py-5">
         <div class="content flex items-center justify-between ">
             <img src="assets/images/logo.svg" alt="" class="logo w-[59px] sm:w-auto">
             <ul
-                class="menuList md:h-fit h-screen md:w-fit w-[280px] flex md:items-center items-start md:flex-row flex-col md:relative fixed top-0 md:bg-transparent bg-white py-16 md:py-0 px-6 md:px-0 z-50">
-                <li class="text-lg text-deep-black font-medium md:mb-0 mb-6">
+                class="menuList h-fit md:w-fit w-full flex md:items-center items-start md:flex-row flex-col md:relative fixed top-0 md:bg-transparent bg-light-yellow pt-[22px] sm:pt-[30px] md:pt-0 pb-11 md:pb-0 px-8 md:px-0 z-50">
+                <li class="md:hidden flex items-center justify-between mb-[42px]">
+                    <img src="assets/images/logo.svg" alt="" class="w-[59px] sm:w-auto">
+                    <img src="assets/images/close-gray.svg" alt="" class="w-6 closeHeader">
+                </li>
+                <li class="md:text-lg text-base text-deep-black md:font-medium md:mb-0 mb-6">
                     <a href="#">Employers</a>
                 </li>
-                <li class="text-lg text-deep-black font-medium md:mb-0 mb-6 md:ml-16 ml-0">
+                <li class="md:text-lg text-base text-deep-black md:font-medium md:mb-0 mb-6 md:ml-16 ml-0">
                     <a href="#">Job Seekers</a>
                 </li>
-                <li class="text-lg text-deep-green font-bold md:ml-16 ml-0">
+                <li class="md:text-lg text-base text-deep-green font-bold md:ml-16 ml-0">
                     <a href="#">Sign In</a>
                 </li>
             </ul>
@@ -36,7 +40,7 @@
         <div class="firstRadial absolute"></div>
         <div class="content">
             <h1
-                class="xs:text-[24px] text-[20px] sm:text-[30px] md:text-[40px] font-aeonik font-semibold text-center sm:mb-16 mb-8">
+                class="xs:text-[24px] text-[23px] sm:text-[30px] md:text-[40px] font-aeonik font-semibold text-center sm:mb-16 mb-8">
                 Search Active
                 <span
                     class="text-white bg-deep-green xs:px-2.5 px-1 rounded-lg inline-block sm:leading-10 leading-8 changeText">Sales</span>
@@ -1127,18 +1131,21 @@
     <!-- modal starts -->
     <div class="requestOverflow w-screen h-screen bg-[#00000076] cursor-pointer fixed top-0 left-0 z-[100]"></div>
     <div
-        class="hireFortInt w-full max-w-[762px] h-[361px] rounded-[25px] bg-white px-8 py-12 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[101]">
-        <h2 class="text-2xl font-bold text-black mb-8 flex items-center justify-between">
-            What role are you looking to hire for?
-            <img src="assets/images/close-gray.svg" alt="" class="closeModBtn cursor-pointer">
+        class="hireFortInt sm:w-4/5 md:w-full w-[302px] max-w-[762px] sm:h-[361px] h-[302px] sm:rounded-[25px] rounded-[15px] bg-white sm:px-8 px-4 sm:py-12 py-6 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[101]">
+        <h2 class="mb-8 flex items-center justify-between">
+            <span class="sm:mt-0 mt-8 sm:text-2xl text-sm font-bold text-black">
+                What role are you looking to hire for?
+            </span>
+            <img src="assets/images/close-gray.svg" alt="" class="closeModBtn cursor-pointer w-4 sm:w-auto">
         </h2>
         <div class="w-full shadow-custom-shadow9 rounded-[35px] mb-8">
-            <div class="w-full shadow-custom-shadow2 sm:py-4 py-2 sm:px-5 px-2.5 bg-white rounded-[35px]">
-                <div class="flex items-center justify-between">
+            <div
+                class="w-full shadow-custom-shadow2 sm:py-4 py-2 sm:px-5 px-2.5 bg-white md:rounded-[35px] sm:rounded-[30px] rounded-[25px]">
+                <div class="flex items-center justify-between flex-wrap">
                     <div
-                        class="w-[calc(70%-27px-9px)] h-[53px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:text-lg text-sm bg-light-black2 relative">
+                        class="w-full sm:w-[calc(70%-27px-9px)] sm:h-[53px] h-11 border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:text-lg text-sm bg-light-black2 relative mb-[11px] sm:mb-0">
                         <div
-                            class="lookingFor lookingFor2 w-full h-full outline-none border-0 bg-light-black2 flex items-center justify-between sm:px-5 px-2 sm:rounded-[15px] rounded-[10px] cursor-pointer">
+                            class="lookingFor lookingFor2 w-full h-full outline-none border-0 bg-light-black2 flex items-center justify-between sm:px-5 px-3.5 sm:rounded-[15px] rounded-[10px] cursor-pointer">
                             <span
                                 class="text-deep-black3 sm:text-lg xs:text-sm text-[10px] w-full block pr-2 truncate lookingText2">
                                 <span
@@ -1146,9 +1153,10 @@
                             </span>
                             <img src="assets/images/arrow-down-big.svg" alt="">
                         </div>
-                        <div class="lookingOverlay lookingOverlay2 w-screen h-screen bg-[#0000] fixed top-0 left-0"></div>
+                        <div class="lookingOverlay lookingOverlay2 w-screen h-screen bg-[#0000] fixed top-0 left-0">
+                        </div>
                         <div
-                            class="toHire toHire2 w-full h-fit py-[11px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] bg-light-black2 absolute left-0 top-[56px] z-20">
+                            class="toHire toHire2 w-full h-fit py-[11px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] bg-light-black2 absolute left-0 sm:top-[56px] top-[50px] z-20">
                             <div
                                 class="hireType sm:text-lg text-sm py-[11px] px-8 flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
                                 <span> Sales </span>
@@ -1233,8 +1241,8 @@
                         </div>
                     </div>
                     <input type="text" placeholder="Zip Code"
-                        class="w-[calc(30%-27px-9px)] h-[53px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 sm:pr-5 pr-0 sm:text-lg xs:text-sm text-[10px] outline-none bg-light-black2 placeholder:text-deep-black3">
-                    <button class="size-[53px] rounded-full border-0 grid place-items-center bg-deep-green">
+                        class="w-[124px] sm:w-[calc(30%-27px-9px)] sm:h-[53px] h-11 border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:pl-5 pl-3.5 md:pr-5 pr-0 sm:text-base md:text-lg xs:text-sm text-[10px] outline-none bg-light-black2 placeholder:text-deep-black3">
+                    <button class="sm:size-[53px] size-11 rounded-full border-0 grid place-items-center bg-deep-green">
                         <img src="assets/images/search.svg" alt="" class="w-6">
                     </button>
                 </div>
@@ -1245,18 +1253,18 @@
         </div>
         <div class="flex items-center justify-center sm:mb-20 mb-8 flex-wrap">
             <div class="flex items-center">
-                <img src="assets/images/trending.svg" alt="" class="mr-2 sm:w-auto w-[12px]">
-                <p class="text-base text-[10px] font-medium text-deep-black2">Trending Searches:</p>
+                <img src="assets/images/trending.svg" alt="" class="sm:mr-2 mr-[5px] sm:w-auto w-[8px]">
+                <p class="sm:text-base text-[8px] font-medium text-deep-black2">Trending Searches:</p>
             </div>
             <ul class="flex items-center">
                 <li
-                    class="md:py-[8px] py-[5px] md:px-3 px-2 border-[1px] border-deep-black3 rounded-[15px] md:text-sm text-[8px] text-deep-black3 ml-2">
+                    class="md:py-[8px] sm:py-[5px] py-[3px] md:px-3 sm:px-2 px-1 border-[1px] border-deep-black3 rounded-[15px] md:text-sm sm:text-[8px] text-[7px] font-medium text-deep-black3 sm:ml-2 ml-1.5">
                     Customer Service Representative </li>
                 <li
-                    class="md:py-[8px] py-[5px] md:px-3 px-2 border-[1px] border-deep-black3 rounded-[15px] md:text-sm text-[8px] text-deep-black3 ml-2">
+                    class="md:py-[8px] sm:py-[5px] py-[3px] md:px-3 sm:px-2 px-1 border-[1px] border-deep-black3 rounded-[15px] md:text-sm sm:text-[8px] text-[7px] font-medium text-deep-black3 sm:ml-2 ml-1.5">
                     Sales Manager</li>
                 <li
-                    class="md:py-[8px] py-[5px] md:px-3 px-2 border-[1px] border-deep-black3 rounded-[15px] md:text-sm text-[8px] text-deep-black3 ml-2 hidden sm:block">
+                    class="md:py-[8px] sm:py-[5px] py-[3px] md:px-3 sm:px-2 px-1 border-[1px] border-deep-black3 rounded-[15px] md:text-sm sm:text-[8px] text-[7px] font-medium text-deep-black3 sm:ml-2 ml-1.5 hidden sm:block">
                     Chief Sales Officer</li>
             </ul>
         </div>
