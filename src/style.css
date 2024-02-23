@@ -105,9 +105,9 @@ select option {
     color: #000 !important;
 }
 
-input::placeholder {
+/* input::placeholder {
     color: #BCBABA !important;
-}
+} */
 
 /* .text-limit-2 {
     overflow: hidden;
@@ -145,11 +145,11 @@ section {
 .secondRadial {
     min-width: 1116px;
     width: 88%;
-    height: 938px;
+    height: 1200px;
     position: absolute;
     right: -6%;
-    bottom: 36px;
-    background: radial-gradient(50% 50% at 50% 50%, #05494c 15.5%, rgb(255 202 2 / 66%) 86%, rgb(255 202 2 / 18%) 90%);
+    bottom: 20px;
+    background: radial-gradient(50% 50% at 50% 50%, #304c05 15.5%, rgb(255 202 2 / 66%) 72%, rgb(255 202 2 / 18%) 90%);
     opacity: 0.15;
     z-index: -1;
     filter: blur(100px);
@@ -325,7 +325,14 @@ section {
     display: none;
 }
 
+.hireFortInt {
+    display: none;
+}
+
 .requestInt.active {
+    display: block;
+}
+.hireFortInt.active {
     display: block;
 }
 

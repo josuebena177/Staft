@@ -20,6 +20,7 @@ module.exports = {
         'custom-shadow6': '0px 16px 8px 0px #0000000D',
         'custom-shadow7': '0px 15px 15px 0px #00000014',
         'custom-shadow8': '0px 12px 8px 0px #0000000D',
+        'custom-shadow9': '16px 16px 8px 0px rgba(0, 0, 0, 4%)',
       },
       colors: {
         'deep-black': '#222222',
