@@ -99,6 +99,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'gilroy', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
 }
 
 li {
@@ -1991,6 +1996,10 @@ video {
   padding-bottom: 8px;
 }
 
+.pb-0 {
+  padding-bottom: 0px;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -2035,6 +2044,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -2049,14 +2062,6 @@ video {
 
 .pt-\[220px\] {
   padding-top: 220px;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
 }
 
 .text-center {

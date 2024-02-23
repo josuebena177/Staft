@@ -197,6 +197,7 @@ doneBtn2.addEventListener("click", () => {
 
 
 const seePeopleBtn = document.querySelector(".seePeopleBtn")
+const getStaftBtn = document.querySelector(".getStaftBtn")
 const requestOverflow = document.querySelector(".requestOverflow")
 const hireFortInt = document.querySelector(".hireFortInt")
 const closeModBtn = document.querySelector(".closeModBtn")
@@ -209,6 +210,7 @@ const seePeopleHandler = () => {
     hireFortInt.classList.add("active")
 }
 seePeopleBtn.addEventListener("click", seePeopleHandler)
+getStaftBtn.addEventListener("click", seePeopleHandler)
 personBox.forEach(item => {
     item.addEventListener("click", seePeopleHandler)
 })

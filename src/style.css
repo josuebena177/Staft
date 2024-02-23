@@ -75,6 +75,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'gilroy', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    scroll-behavior: smooth;
 }
 
 li {
