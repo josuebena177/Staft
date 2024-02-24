@@ -136,7 +136,15 @@ section {
     min-width: 1180px;
     width: 80%;
     height: 900px;
-    background: radial-gradient(50% 50% at 50% 50%, rgb(255 202 2 / 74%) 22.5%, rgb(255 202 2 / 58%) 100%, rgba(255, 202, 2, 0.7) 100%);
+    /* background: radial-gradient(50% 50% at 50% 50%, rgb(255 202 2 / 74%) 22.5%, rgb(255 202 2 / 58%) 100%, rgba(255, 202, 2, 0.7) 100%); */
+    background: linear-gradient(to bottom,
+            rgba(255, 202, 2, 0.7) 0%,
+            /* Base color with slight transparency */
+            rgba(255, 202, 2, 0.8) 22.5%,
+            /* Fades to slightly more opaque color */
+            rgba(255, 202, 2, 0.58) 100%
+            /* Fades to less opaque color, simulating outer ring */
+        );
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -154,7 +162,17 @@ section {
     position: absolute;
     right: -6%;
     bottom: 20px;
-    background: radial-gradient(50% 50% at 50% 50%, #304c05 15.5%, rgb(255 202 2 / 66%) 72%, rgb(255 202 2 / 18%) 90%);
+    /* background: radial-gradient(50% 50% at 50% 50%, #304c05 15.5%, rgb(255 202 2 / 66%) 72%, rgb(255 202 2 / 18%) 90%); */
+    background: linear-gradient(to bottom,
+            #304c05 0%,
+            /* Base color */
+            #304c05 15.5%,
+            /* Maintain base color for a bit */
+            rgba(255, 202, 2, 0.66) 72%,
+            /* Transition to lighter color with opacity */
+            rgba(255, 202, 2, 0.18) 100%
+            /* Fade to lighter color with lower opacity */
+        );
     opacity: 0.15;
     z-index: -1;
     filter: blur(100px);
@@ -412,7 +430,7 @@ section {
 
     .firstRadial {
         height: 650px;
-        background: radial-gradient(50% 50% at 50% 50%, rgb(255 202 2 / 42%) 22.5%, rgb(255 202 2 / 46%) 100%, rgb(255 202 2 / 38%) 100%);
+        /* background: radial-gradient(50% 50% at 50% 50%, rgb(255 202 2 / 42%) 22.5%, rgb(255 202 2 / 46%) 100%, rgb(255 202 2 / 38%) 100%); */
         top: -3%;
     }
 
@@ -423,7 +441,7 @@ section {
         left: 50%;
         transform: translateX(-50%);
         bottom: 153px;
-        background: radial-gradient(50% 50% at 50% 50%, #698b0fb0 15.5%, #ffca0259 86%, rgb(255 202 2 / 18%) 90%);
+        /* background: radial-gradient(50% 50% at 50% 50%, #698b0fb0 15.5%, #ffca0259 86%, rgb(255 202 2 / 18%) 90%); */
     }
 
 
