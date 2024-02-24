@@ -12,7 +12,7 @@ module.exports = {
         '2xl': '1536px',
       },
       boxShadow: {
-        'custom-shadow1': '16px 16px 8px 0px rgba(0, 0, 0, 0.1)',
+        'custom-shadow1': '16px 16px 8px 0px rgba(0, 0, 0, 4%)',
         'custom-shadow2': '-16px 0px 8px 0px #0000000A',
         'custom-shadow3': '0px 12px 9px 0px #0000000D',
         'custom-shadow4': '12px 12px 9px 0px #0000000D',
