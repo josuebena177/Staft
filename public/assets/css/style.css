@@ -3096,10 +3096,6 @@ video {
     align-items: center;
   }
 
-  .md\:rounded-\[20px\] {
-    border-radius: 20px;
-  }
-
   .md\:rounded-\[25px\] {
     border-radius: 25px;
   }
