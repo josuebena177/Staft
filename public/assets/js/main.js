@@ -16,7 +16,7 @@ closeHeader.addEventListener("click", () => {
 
 const changeText = document.querySelector(".changeText")
 
-const textArr = ["Sales", "General", "Administrative"]
+const textArr = ["Sales", "Operations"]
 
 let currentIndex = 0;
 
