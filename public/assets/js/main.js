@@ -14,20 +14,6 @@ closeHeader.addEventListener("click", () => {
 
 
 
-const changeText = document.querySelector(".changeText")
-
-const textArr = ["Sales", "Operations"]
-
-let currentIndex = 0;
-
-function updateText() {
-    changeText.textContent = textArr[currentIndex];
-    currentIndex = (currentIndex + 1) % textArr.length;
-}
-
-setInterval(updateText, 1500);
-updateText();
-
 
 
 

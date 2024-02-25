@@ -104,171 +104,6 @@ lookingOverlay2.addEventListener("click", () => {
     toHire2.classList.remove("active")
 })
 
-// lookingFor.addEventListener("click", (event) => {
-//     event.stopPropagation();
-//     toHire.classList.add("active")
-//     lookingOverlay.classList.add("active")
-// })
-// lookingFor2.addEventListener("click", (event) => {
-//     event.stopPropagation();
-//     toHire2.classList.add("active")
-//     lookingOverlay2.classList.add("active")
-// })
-// toHire.querySelectorAll(".hireType").forEach((item, i) => {
-//     item.addEventListener("click", (event) => {
-//         event.stopPropagation();
-//         item.querySelectorAll(".hireLevels")[i].classList.add("active")
-//         const singleHireLevel = item.querySelector(".hireLevels")
-//         singleHireLevel?.querySelectorAll(".hireLevelItem").forEach((levItem, levInd) => {
-//             levItem.addEventListener("click", (event) => {
-//                 event.stopPropagation();
-//                 levItem.querySelector(".hireSelects")?.classList.add("active")
-//             })
-//         })
-//     })
-// })
-// toHire2.querySelectorAll(".hireType").forEach((item, i) => {
-//     item.addEventListener("click", (event) => {
-//         console.log('man');
-//         event.stopPropagation();
-//         item.querySelectorAll(".hireLevels")[i].classList.add("active")
-//         const singleHireLevel = item.querySelector(".hireLevels")
-//         singleHireLevel?.querySelectorAll(".hireLevelItem").forEach((levItem, levInd) => {
-//             levItem.addEventListener("click", (event) => {
-//                 event.stopPropagation();
-//                 levItem.querySelector(".hireSelects")?.classList.add("active")
-//             })
-//         })
-//     })
-// })
-
-// doneBtn1.addEventListener("click", (event) => {
-//     event.stopPropagation()
-//     lookingOverlay.classList.remove("active")
-//     toHire.classList.remove("active")
-//     hireLevels.forEach(item => {
-//         item.classList.remove("active")
-//     })
-//     hireSelects.forEach(item => {
-//         item.classList.remove("active")
-//     })
-// })
-// doneBtn2.addEventListener("click", (event) => {
-//     event.stopPropagation()
-//     lookingOverlay2.classList.remove("active")
-//     toHire2.classList.remove("active")
-//     hireLevels.forEach(item => {
-//         item.classList.remove("active")
-//     })
-//     hireSelects.forEach(item => {
-//         item.classList.remove("active")
-//     })
-// })
-
-// lookingOverlay.addEventListener("click", (event) => {
-//     event.stopPropagation()
-//     lookingOverlay.classList.remove("active")
-//     toHire.classList.remove("active")
-//     hireLevels.forEach(item => {
-//         item.classList.remove("active")
-//     })
-//     hireSelects.forEach(item => {
-//         item.classList.remove("active")
-//     })
-// })
-// lookingOverlay2.addEventListener("click", (event) => {
-//     event.stopPropagation()
-//     lookingOverlay2.classList.remove("active")
-//     toHire2.classList.remove("active")
-//     hireLevels.forEach(item => {
-//         item.classList.remove("active")
-//     })
-//     hireSelects.forEach(item => {
-//         item.classList.remove("active")
-//     })
-// })
-
-
-
-// let selectedItems = [];
-// let selectedItems2 = [];
-
-
-// doneBtn1.addEventListener("click", () => {
-//     hireSelectLabels.forEach(item => {
-//         const itemInp = item.querySelector("input")
-//         const itemText = item.querySelector("small").innerText
-//         const indexInSelectedItems = selectedItems.indexOf(itemText);
-//         console.log(itemInp.checked);
-//         if (itemInp.checked) {
-//             if (indexInSelectedItems === -1) {
-//                 selectedItems.push(itemText);
-//             }
-//         } else {
-//             if (indexInSelectedItems !== -1) {
-//                 selectedItems.splice(indexInSelectedItems, 1);
-//             }
-//         }
-//     })
-//     console.log(selectedItems);
-//     if (selectedItems.length > 0) {
-//         lookingText.innerHTML = `<p class="sm:text-lg xs:text-sm text-[10px] w-full block pr-2 truncate text-black">${selectedItems}</p>`
-//     } else {
-//         lookingText.innerHTML = `<span class="text-deep-black3 sm:text-lg xs:text-sm text-[10px] w-full block">I am looking to hire</span>`
-//     }
-
-//     const selectedShow = selectedItems.map(val => {
-//         return (
-//             `
-//             <li class="md:py-[8px] py-[5px] md:px-3 px-2 mt-3 border-[1px] border-deep-green rounded-[15px] md:text-sm text-[8px] text-deep-green md:mr-4 mr-2 flex items-center">
-//                     ${val}
-//                 <img src="assets/images/x-circle.svg" alt="" class="cursor-pointer ml-1.5">
-//             </li>
-//                 `
-//         )
-//     }).join("")
-//     selectItemContainer.innerHTML = selectedShow
-// })
-// doneBtn2.addEventListener("click", () => {
-//     hireSelectLabels.forEach(item => {
-//         const itemInp = item.querySelector("input")
-//         const itemText = item.querySelector("small").innerText
-//         const indexInSelectedItems = selectedItems2.indexOf(itemText);
-//         console.log(itemInp.checked);
-//         if (itemInp.checked) {
-//             if (indexInSelectedItems === -1) {
-//                 selectedItems2.push(itemText);
-//             }
-//         } else {
-//             if (indexInSelectedItems !== -1) {
-//                 selectedItems2.splice(indexInSelectedItems, 1);
-//             }
-//         }
-//     })
-//     console.log(selectedItems2);
-//     if (selectedItems2.length > 0) {
-//         lookingText2.innerHTML = `<p class="sm:text-lg xs:text-sm text-[10px] w-full block pr-2 truncate text-black">${selectedItems2}</p>`
-//     } else {
-//         lookingText2.innerHTML = `<span class="text-deep-black3 sm:text-lg xs:text-sm text-[10px] w-full block">Roles</span>`
-//     }
-
-//     const selectedShow = selectedItems2.map(val => {
-//         return (
-//             `
-//             <li class="md:py-[8px] py-[5px] md:px-3 px-2 mt-3 border-[1px] border-deep-green rounded-[15px] md:text-sm text-[8px] text-deep-green md:mr-4 mr-2 flex items-center">
-//                     ${val}
-//                 <img src="assets/images/x-circle.svg" alt="" class="cursor-pointer ml-1.5">
-//             </li>
-//                 `
-//         )
-//     }).join("")
-//     selectItemContainer2.innerHTML = selectedShow
-// })
-
-
-
-
-
 
 
 
@@ -302,3 +137,29 @@ closeModBtn.addEventListener("click", () => {
     requestOverflow.classList.remove("active")
     hireFortInt.classList.remove("active")
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+const changeText = document.querySelector(".changeText")
+
+const textArr = ["Sales", "Operations"]
+
+let currentIndex = 0;
+
+function updateText() {
+    changeText.textContent = textArr[currentIndex];
+    currentIndex = (currentIndex + 1) % textArr.length;
+}
+
+setInterval(updateText, 1500);
+updateText();

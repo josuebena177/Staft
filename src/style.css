@@ -98,6 +98,11 @@ a {
     margin: 0 auto;
 }
 
+.content.sliderContent {
+    max-width: fit-content;
+    padding: 0 5px;
+}
+
 .font-aeonik {
     font-family: 'aeonik', sans-serif;
 }
@@ -166,9 +171,9 @@ section {
 
 .swiper-button-next,
 .swiper-button-prev {
-    top: 50%;
+    top: 63%;
     transform: translateY(50%);
-    /* box-shadow: 0px 0px 12px 22px #fff; */
+    box-shadow: 0px 0px 12px 22px #fff;
 }
 
 .swiper-button-next::after,
@@ -281,20 +286,17 @@ section {
     z-index: 10;
 }
 
-.toHire {
+.toHire, .toHire2, .toHire3, .toHire4, .toHire5 {
     opacity: 0;
     pointer-events: none;
 }
 
-.toHire.active {
+.toHire.active, .toHire2.active, .toHire3.active, .toHire4.active, .toHire5.active {
     opacity: 1;
     pointer-events: all;
 }
 
-.toHire.active {
-    opacity: 1;
-    pointer-events: all;
-}
+
 
 .hireLevels {
     opacity: 0;
@@ -376,10 +378,13 @@ section {
     .content {
         padding: 10px 15px
     }
+    .content.sliderContent {
+        padding: 0 15px;
+    }
 }
 
 @media (min-width: 768px) {
-    .mySwiper .swiper-wrapper {
+    .homeCardSlider.mySwiper .swiper-wrapper {
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
@@ -390,6 +395,9 @@ section {
 @media (max-width: 768px) {
     .content {
         padding: 10px 32px;
+    }
+    .content.sliderContent {
+        padding: 0 32px;
     }
 
     .menuList {

@@ -14,18 +14,22 @@
 
 <body>
     <div class="overlay w-screen h-screen bg-[#00000071] fixed md:hidden"></div>
-    <header class="py-5">
+    <header class="py-3 sm:py-5">
         <div class="content flex items-center justify-between ">
             <img src="../assets/images/logo.svg" alt="" class="logo w-[59px] sm:w-auto">
             <ul
-                class="menuList md:h-fit h-screen md:w-fit w-[280px] flex md:items-center items-start md:flex-row flex-col md:relative fixed top-0 md:bg-transparent bg-white py-16 md:py-0 px-6 md:px-0 z-50">
-                <li class="text-lg text-deep-black font-medium md:mb-0 mb-6">
+                class="menuList h-fit md:w-fit w-full flex md:items-center items-start md:flex-row flex-col md:relative fixed top-0 md:bg-transparent bg-light-yellow pt-[22px] sm:pt-[30px] md:pt-0 pb-11 md:pb-0 px-8 md:px-0 z-50">
+                <li class="md:hidden flex items-center justify-between mb-[42px]">
+                    <img src="../assets/images/logo.svg" alt="" class="w-[59px] sm:w-auto">
+                    <img src="../assets/images/close-gray.svg" alt="" class="w-6 closeHeader">
+                </li>
+                <li class="md:text-lg text-base text-deep-black md:font-medium md:mb-0 mb-6">
                     <a href="#">Employers</a>
                 </li>
-                <li class="text-lg text-deep-black font-medium md:mb-0 mb-6 md:ml-16 ml-0">
+                <li class="md:text-lg text-base text-deep-black md:font-medium md:mb-0 mb-6 md:ml-16 ml-0">
                     <a href="#">Job Seekers</a>
                 </li>
-                <li class="text-lg text-deep-green font-medium md:ml-16 ml-0">
+                <li class="md:text-lg text-base text-deep-green font-bold md:ml-16 ml-0">
                     <a href="#">Sign In</a>
                 </li>
             </ul>
@@ -33,28 +37,54 @@
         </div>
     </header>
 
-    <section class="sm:py-14 py-6 relative">
+    <section class="sm:pt-3 pt-3 relative sm:mb-12 mb-6 z-11">
         <div class="content">
-            <div
-                class="w-full max-w-[1100px] mx-auto shadow-custom-shadow1 bg-white sm:rounded-[30px] rounded-[25px] sm:mb-10 mb-6">
+            <div class="w-full max-w-[1100px] mx-auto shadow-custom-shadow1 bg-white sm:rounded-[30px] rounded-[25px]">
                 <div
                     class="flex items-center justify-center w-full shadow-custom-shadow2 sm:py-4 py-2 sm:px-5 px-2 bg-white rounded-[30px]">
                     <div class="flex items-center w-[calc(70%-23px-7px)] lg:w-[calc(62%-31px-25px)]">
                         <p class="text-lg font-semibold w-[105px] mr-4 hidden lg:block">Looking For:</p>
                         <div
-                            class="w-[calc(100%-5px)] sm:w-[calc(100%-25px)] lg:w-[calc(100%-155px)] sm:h-[53px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 sm:text-lg text-sm bg-light-black2">
-                            <select class="w-full h-full outline-none border-0 bg-light-black2">
-                                <option value="Roles" selected>Roles</option>
-                                <option value="Option 1">Option 1</option>
-                                <option value="Option 2">Option 2</option>
-                                <option value="Option 3">Option 3</option>
-                            </select>
+                            class="w-[calc(100%-5px)] sm:w-[calc(100%-25px)] lg:w-[calc(100%-155px)] sm:h-[53px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:text-lg text-sm bg-light-black2 relative">
+                            <div
+                                class="lookingFor w-full h-full outline-none border-0 bg-light-black2 flex items-center justify-between sm:px-5 px-3 lg:px-8 sm:rounded-[15px] rounded-[10px] cursor-pointer">
+                                <span
+                                    class="text-deep-black3 sm:text-lg xs:text-sm text-xs w-full block pr-2 truncate lookingText">
+                                    <span
+                                        class="text-deep-black3 sm:text-lg xs:text-sm text-xs w-full block">Roles</span>
+                                </span>
+                                <img src="../assets/images/arrow-down-big.svg" alt="" class="md:block hidden">
+                                <img src="../assets/images/arrow-down-sm.svg" alt="" class="md:hidden">
+                            </div>
+                            <div
+                                class="toHire w-full min-w-fit h-fit py-[11px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] bg-light-black2 absolute left-0 sm:top-[65px] top-[49px] z-20">
+                                <div
+                                    class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                    <span> Sales Development Representative </span>
+                                </div>
+                                <div
+                                    class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                    <span> Sales Associate </span>
+                                </div>
+                                <div
+                                    class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                    <span> Account Executive </span>
+                                </div>
+                                <div
+                                    class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                    <span> Customer Service Representative </span>
+                                </div>
+                                <div
+                                    class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                    <span> Retail Supervisor </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="flex items-center w-[calc(30%-23px-7px)] sm:w-[calc(33%-31px-25px)]">
                         <p class="text-lg font-semibold w-[65px] hidden lg:block mr-4">Where:</p>
                         <input type="text" placeholder="Zip Code"
-                            class="w-[calc(100%-5px)] sm:w-[calc(100%-25px)] lg:w-[calc(100%-115px)] sm:h-[53px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 pr-0 sm:pr-2 sm:text-lg text-sm outline-none bg-light-black2">
+                            class="w-[calc(100%-5px)] sm:w-[calc(100%-25px)] lg:w-[calc(100%-115px)] sm:h-[53px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:px-6 px-2 sm:pr-5 pr-0 sm:text-lg text-sm outline-none bg-light-black2">
                     </div>
                     <button
                         class="w-[46px] sm:w-[53px] sm:h-[53px] h-[46px] rounded-full border-0 grid place-items-center bg-deep-green">
@@ -62,76 +92,192 @@
                     </button>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="flex items-center justify-center sm:mb-10 mb-6 relative">
-                <div class="swiper mySwiper mx-0">
-                    <div class="swiper-wrapper items-center">
+
+    <div class="lookingOverlay w-screen h-screen bg-[#0000] fixed top-0 left-0"></div>
+    <div class="content sliderContent relative z-10">
+        <div class="flex items-center justify-center sm:mb-14 mb-6 relative">
+            <div class="swiper mySwiper mx-0 overflow-y-visible overflow-x-clip">
+                <div class="swiper-wrapper items-center">
+                    <div
+                        class="swiper-slide w-[305px] sm:h-[53px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:text-lg text-sm bg-light-black2 flex items-center relative">
+                        <img src="../assets/images/industry-icon.svg" alt=""
+                            class="mr-1.5 absolute top-1/2 left-[20px] -translate-y-1/2">
                         <div
-                            class="swiper-slide w-[290px] sm:h-[53px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 sm:text-lg text-sm bg-light-black2 flex items-center mb-3">
-                            <img src="../assets/images/industry-icon.svg" alt="" class="mr-1.5">
-                            <select class="w-full h-full outline-none border-0 bg-light-black2">
-                                <option value="Industry" selected>Industry</option>
-                                <option value="Option 1">Option 1</option>
-                                <option value="Option 2">Option 2</option>
-                                <option value="Option 3">Option 3</option>
-                            </select>
+                            class="lookingFor2 w-full h-full outline-none border-0 bg-light-black2 flex items-center justify-between sm:px-5 px-2 pl-6 sm:pl-[42px] sm:rounded-[15px] rounded-[10px] cursor-pointer">
+                            <span
+                                class="text-deep-black3 sm:text-lg xs:text-sm text-xs w-full block pr-2 truncate lookingText">
+                                <span
+                                    class="text-deep-black4 sm:text-lg xs:text-sm text-xs w-full block">Industry</span>
+                            </span>
+                            <img src="../assets/images/arrow-down-big.svg" alt="" class="md:block hidden">
+                            <img src="../assets/images/arrow-down-sm.svg" alt="" class="md:hidden">
                         </div>
                         <div
-                            class="swiper-slide w-[225px] sm:h-[53px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 sm:text-lg text-sm bg-light-black2 flex items-center mb-3">
-                            <img src="../assets/images/graduate-icon.svg" alt="" class="mr-1.5">
-                            <select class="w-full h-full outline-none border-0 bg-light-black2">
-                                <option value="Year Graduated" selected>Year Graduated</option>
-                                <option value="Option 1">Option 1</option>
-                                <option value="Option 2">Option 2</option>
-                                <option value="Option 3">Option 3</option>
-                            </select>
+                            class="toHire2 w-full min-w-fit h-fit py-[11px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] bg-light-black2 absolute left-0 sm:top-[65px] top-[49px] z-20">
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> Sales Development Representative </span>
+                            </div>
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> Sales Associate </span>
+                            </div>
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> Account Executive </span>
+                            </div>
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> Customer Service Representative </span>
+                            </div>
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> Retail Supervisor </span>
+                            </div>
                         </div>
-                        <div
-                            class="swiper-slide w-[185px] sm:h-[53px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 sm:text-lg text-sm bg-light-black2 flex items-center mb-3">
-                            <img src="../assets/images/language-icon.svg" alt="" class="mr-1.5">
-                            <select class="w-full h-full outline-none border-0 bg-light-black2">
-                                <option value="Year Graduated" selected>Language</option>
-                                <option value="Option 1">Option 1</option>
-                                <option value="Option 2">Option 2</option>
-                                <option value="Option 3">Option 3</option>
-                            </select>
-                        </div>
-                        <div
-                            class="swiper-slide w-[145px] sm:h-[53px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 sm:text-lg text-sm bg-light-black2 flex items-center mb-3">
-                            <img src="../assets/images/radius-icon.svg" alt="" class="mr-1.5">
-                            <select class="w-full h-full outline-none border-0 bg-light-black2">
-                                <option value="Year Graduated" selected>Radius</option>
-                                <option value="Option 1">Option 1</option>
-                                <option value="Option 2">Option 2</option>
-                                <option value="Option 3">Option 3</option>
-                            </select>
-                        </div>
-                        <div
-                            class="swiper-slide w-[235px] sm:h-[53px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 sm:text-lg text-sm bg-light-black2 flex items-center mb-3 relative">
-                            <input type="text" placeholder="Keyword"
-                                class="w-full h-full border-0 sm:rounded-[15px] rounded-[10px] sm:text-lg text-sm outline-none bg-transparent">
-                            <img src="../assets/images/right-arrow-green.svg" alt=""
-                                class="absolute top-1/2 right-3 translate-y-[-50%]">
-                        </div>
-                        <p class="swiper-slide w-[125px]text-lg font-bold text-deep-black3 ml-2">Clear all filters</p>
                     </div>
-                </div>
-                <div
-                    class="swiper-button-next rounded-full w-4 h-4 bg-white border-[1px] border-light-black6 right-[-7px] flex lg:hidden">
-                </div>
-                <div
-                    class="swiper-button-prev rounded-full w-4 h-4 bg-white border-[1px] border-light-black6 left-[-7px] flex lg:hidden">
+                    <div
+                        class="swiper-slide w-[225px] sm:h-[53px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:text-lg text-sm bg-light-black2 flex items-center relative">
+                        <img src="../assets/images/graduate-icon.svg" alt=""
+                            class="mr-1.5 w-4 absolute top-1/2 left-[20px] -translate-y-1/2">
+                        <div
+                            class="lookingFor3 w-full h-full outline-none border-0 bg-light-black2 flex items-center justify-between sm:px-5 px-2 pl-6 sm:pl-[42px] sm:rounded-[15px] rounded-[10px] cursor-pointer">
+                            <span
+                                class="text-deep-black3 sm:text-lg xs:text-sm text-xs w-full block pr-2 truncate lookingText">
+                                <span class="text-deep-black3 sm:text-lg xs:text-sm text-xs w-full block">Year
+                                    Graduated</span>
+                            </span>
+                            <img src="../assets/images/arrow-down-big.svg" alt="" class="md:block hidden">
+                            <img src="../assets/images/arrow-down-sm.svg" alt="" class="md:hidden">
+                        </div>
+                        <div
+                            class="toHire3 w-full min-w-fit h-fit py-[11px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] bg-light-black2 absolute left-0 sm:top-[65px] top-[49px] z-20">
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> 2024 </span>
+                            </div>
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> 2023 </span>
+                            </div>
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> 2022 </span>
+                            </div>
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> 2021 </span>
+                            </div>
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> 2020 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide w-[202px] sm:h-[53px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:text-lg text-sm bg-light-black2 flex items-center relative">
+                        <img src="../assets/images/dollar-big.svg" alt=""
+                            class="mr-1.5 absolute top-1/2 left-[20px] -translate-y-1/2">
+                        <div
+                            class="lookingFor4 w-full h-full outline-none border-0 bg-light-black2 flex items-center justify-between sm:px-5 px-2 pl-6 sm:pl-[42px] sm:rounded-[15px] rounded-[10px] cursor-pointer">
+                            <span
+                                class="text-deep-black3 sm:text-lg xs:text-sm text-xs w-full block pr-2 truncate lookingText">
+                                <span
+                                    class="text-deep-black4 sm:text-lg xs:text-sm text-xs w-full block">Compensation</span>
+                            </span>
+                            <img src="../assets/images/arrow-down-big.svg" alt="" class="md:block hidden">
+                            <img src="../assets/images/arrow-down-sm.svg" alt="" class="md:hidden">
+                        </div>
+                        <div
+                            class="toHire4 w-full min-w-fit h-fit py-[11px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] bg-light-black2 absolute left-0 sm:top-[65px] top-[49px] z-20">
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> $20,000-$50,000 </span>
+                            </div>
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> $50,000-$75,000 </span>
+                            </div>
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> $75,000-$100,000 </span>
+                            </div>
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> $100,000-$200,000 </span>
+                            </div>
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> $200,000+ </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide w-[165px] sm:h-[53px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:text-lg text-sm bg-light-black2 flex items-center relative">
+                        <img src="../assets/images/radius-icon.svg" alt=""
+                            class="mr-1.5 absolute top-1/2 left-[20px] -translate-y-1/2">
+                        <div
+                            class="lookingFor5 w-full h-full outline-none border-0 bg-light-black2 flex items-center justify-between sm:px-5 px-2 pl-6 sm:pl-[42px] sm:rounded-[15px] rounded-[10px] cursor-pointer">
+                            <span
+                                class="text-deep-black3 sm:text-lg xs:text-sm text-xs w-full block pr-2 truncate lookingText">
+                                <span class="text-deep-black3 sm:text-lg xs:text-sm text-xs w-full block">Radius</span>
+                            </span>
+                            <img src="../assets/images/arrow-down-big.svg" alt="" class="md:block hidden">
+                            <img src="../assets/images/arrow-down-sm.svg" alt="" class="md:hidden">
+                        </div>
+                        <div
+                            class="toHire5 w-full min-w-fit h-fit py-[11px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] bg-light-black2 absolute left-0 sm:top-[65px] top-[49px] z-20">
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> 5 miles </span>
+                            </div>
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> 10 miles </span>
+                            </div>
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> 20 miles </span>
+                            </div>
+                            <div
+                                class="hireType sm:text-lg text-sm sm:py-[11px] py-2 lg:px-8 sm:px-5 px-3 lg:pr-8 sm:pr-5 pr-8 whitespace-nowrap flex items-center justify-between cursor-pointer duration-300 hover:bg-white">
+                                <span> 50 miles </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide w-[245px] sm:h-[53px] h-[46px] border-[1px] border-light-black1 sm:rounded-[15px] rounded-[10px] sm:px-5 px-2 sm:text-lg text-sm bg-light-black2 flex items-center relative">
+                        <input type="text" placeholder="Keyword"
+                            class="w-full h-full border-0 sm:rounded-[15px] rounded-[10px] sm:text-lg text-sm outline-none bg-transparent">
+                        <img src="../assets/images/right-arrow-green.svg" alt=""
+                            class="absolute top-1/2 right-3 translate-y-[-50%]">
+                    </div>
+                    <p class="swiper-slide w-[125px] text-lg font-bold text-deep-black3 ml-2">Clear all filters</p>
                 </div>
             </div>
+            <div
+                class="swiper-button-next rounded-full w-4 h-4 bg-white border-[1px] border-light-black6 right-[-7px] flex lg:hidden">
+            </div>
+            <div
+                class="swiper-button-prev rounded-full w-4 h-4 bg-white border-[1px] border-light-black6 left-[-7px] flex lg:hidden">
+            </div>
+        </div>
+    </div>
 
+
+    <section class="sm:pb-14 pb-6 relative">
+        <div class="content">
             <div class="flex justify-between md:flex-row flex-col-reverse">
                 <div class="w-full md:w-[calc(50%-8px)] scrollContainer">
                     <div
-                        class="flex items-center w-full xl:h-[282px] md:h-[340px] h-fit rounded-[15px] border-[1px] border-light-black3 overflow-hidden mb-4 relative shadow-custom-shadow3">
+                        class="flex items-center w-full xl:h-[205px] md:h-[340px] h-fit rounded-[15px] border-[1px] border-light-black3 overflow-hidden mb-4 relative shadow-custom-shadow3">
                         <img src="../assets/images/man3.jpg" alt=""
                             class="w-[87px] md:w-[155px] lg:w-[211px] md:h-full h-[118px] md:relative absolute top-0 left-0 rounded-[10px] object-cover">
                         <div class="w-full lg:w-[calc(100%-211px)] lg:py-4 py-2 sm:px-3 px-1.5">
-                            <div class="flex items-center justify-between md:mb-1 mb-0 md:pl-0 pl-[95px]">
+                            <div class="flex items-center justify-between md:pl-0 pl-[95px]">
                                 <h3 class="sm:text-base lg:text-lg text-sm font-semibold flex">Adams G. <img
                                         src="../assets/images/yellow-tick.svg" alt="" class="lg:w-auto w-3 block ml-2">
                                 </h3>
@@ -143,7 +289,7 @@
                                     <p class="lg:text-xs text-[10px]">Online Now</p>
                                 </div>
                             </div>
-                            <div class="flex items-center mb-1 lg:mb-2 md:pl-0 pl-[95px]">
+                            <div class="flex items-center mb-2 lg:mb-4 md:pl-0 pl-[95px]">
                                 <img src="../assets/images/senior-badge.svg" alt="" class="mr-2">
                                 <p class="lg:text-xs text-[10px]">Senior Level</p>
                             </div>
@@ -157,29 +303,21 @@
                                     <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
                                 </div>
                             </div>
-                            <div class="flex items-center mb-1 lg:mb-2  md:pl-0 pl-[95px]">
-                                <img src="../assets/images/lang.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
-                            </div>
                             <div class="flex items-center mb-2 lg:mb-2.5  md:pl-0 pl-[95px]">
                                 <img src="../assets/images/cap.svg" alt="" class="mr-2">
                                 <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
                             </div>
-                            <p class="text-sm text-deep-black line-clamp-2 mb-2 hidden md:block">
-                                I bring my financial expertise, attention to details, and analytical skills to the total
-                                growth and success
-                            </p>
-                            <div class="flex items-center mb-3">
+                            <div class="flex items-center mb-4">
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
-                                    <p class="lg:text-xs text-[8px] text-deep-green">Retail Sales</p>
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-green mr-1">
+                                    <p class="lg:text-xs text-[8px] font-semibold text-deep-green">Retail Sales</p>
                                 </div>
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Internet Sales</p>
                                 </div>
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Customer Support Rep.</p>
                                 </div>
                                 <p class="lg:text-xs text-[8px] font-bold text-deep-black2">+ 3 more</p>
@@ -195,11 +333,11 @@
                         </div>
                     </div>
                     <div
-                        class="flex items-center w-full xl:h-[282px] md:h-[340px] h-fit rounded-[15px] border-[1px] border-light-black3 overflow-hidden mb-4 relative shadow-custom-shadow3">
+                        class="flex items-center w-full xl:h-[205px] md:h-[340px] h-fit rounded-[15px] border-[1px] border-light-black3 overflow-hidden mb-4 relative shadow-custom-shadow3">
                         <img src="../assets/images/man3.jpg" alt=""
                             class="w-[87px] md:w-[155px] lg:w-[211px] md:h-full h-[118px] md:relative absolute top-0 left-0 rounded-[10px] object-cover">
                         <div class="w-full lg:w-[calc(100%-211px)] lg:py-4 py-2 sm:px-3 px-1.5">
-                            <div class="flex items-center justify-between lg:mb-1 mb-0 md:pl-0 pl-[95px]">
+                            <div class="flex items-center justify-between md:pl-0 pl-[95px]">
                                 <h3 class="sm:text-base lg:text-lg text-sm font-semibold flex">Adams G. <img
                                         src="../assets/images/yellow-tick.svg" alt="" class="lg:w-auto w-3 block ml-2">
                                 </h3>
@@ -210,7 +348,7 @@
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Active 6 hrs ago</p>
                                 </div>
                             </div>
-                            <div class="flex items-center mb-1 lg:mb-2 md:pl-0 pl-[95px]">
+                            <div class="flex items-center mb-2 lg:mb-4 md:pl-0 pl-[95px]">
                                 <img src="../assets/images/entry-sign.svg" alt="" class="mr-2">
                                 <p class="lg:text-xs text-[10px]">Entry Level</p>
                             </div>
@@ -224,29 +362,21 @@
                                     <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
                                 </div>
                             </div>
-                            <div class="flex items-center mb-1 lg:mb-2  md:pl-0 pl-[95px]">
-                                <img src="../assets/images/lang.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
-                            </div>
                             <div class="flex items-center mb-2 lg:mb-2.5  md:pl-0 pl-[95px]">
                                 <img src="../assets/images/cap.svg" alt="" class="mr-2">
                                 <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
                             </div>
-                            <p class="text-sm text-deep-black line-clamp-2 mb-2 hidden md:block">
-                                I bring my financial expertise, attention to details, and analytical skills to the total
-                                growth and success
-                            </p>
-                            <div class="flex items-center mb-3">
+                            <div class="flex items-center mb-4">
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
-                                    <p class="lg:text-xs text-[8px] text-deep-green">Retail Sales</p>
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-green mr-1">
+                                    <p class="lg:text-xs text-[8px] font-semibold text-deep-green">Retail Sales</p>
                                 </div>
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Internet Sales</p>
                                 </div>
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Customer Support Rep.</p>
                                 </div>
                                 <p class="lg:text-xs text-[8px] font-bold text-deep-black2">+ 3 more</p>
@@ -262,11 +392,11 @@
                         </div>
                     </div>
                     <div
-                        class="flex items-center w-full xl:h-[282px] md:h-[340px] h-fit rounded-[15px] border-[1px] border-light-black3 overflow-hidden mb-4 relative shadow-custom-shadow3">
+                        class="flex items-center w-full xl:h-[205px] md:h-[340px] h-fit rounded-[15px] border-[1px] border-light-black3 overflow-hidden mb-4 relative shadow-custom-shadow3">
                         <img src="../assets/images/man3.jpg" alt=""
                             class="w-[87px] md:w-[155px] lg:w-[211px] md:h-full h-[118px] md:relative absolute top-0 left-0 rounded-[10px] object-cover">
                         <div class="w-full lg:w-[calc(100%-211px)] lg:py-4 py-2 sm:px-3 px-1.5">
-                            <div class="flex items-center justify-between lg:mb-1 mb-0 md:pl-0 pl-[95px]">
+                            <div class="flex items-center justify-between md:pl-0 pl-[95px]">
                                 <h3 class="sm:text-base lg:text-lg text-sm font-semibold flex">Adams G. <img
                                         src="../assets/images/yellow-tick.svg" alt="" class="lg:w-auto w-3 block ml-2">
                                 </h3>
@@ -277,7 +407,7 @@
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Active 6 hrs ago</p>
                                 </div>
                             </div>
-                            <div class="flex items-center mb-1 lg:mb-2 md:pl-0 pl-[95px]">
+                            <div class="flex items-center mb-2 lg:mb-4 md:pl-0 pl-[95px]">
                                 <img src="../assets/images/mid-sign.svg" alt="" class="mr-2">
                                 <p class="lg:text-xs text-[10px]">Mid Level</p>
                             </div>
@@ -291,29 +421,21 @@
                                     <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
                                 </div>
                             </div>
-                            <div class="flex items-center mb-1 lg:mb-2  md:pl-0 pl-[95px]">
-                                <img src="../assets/images/lang.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
-                            </div>
                             <div class="flex items-center mb-2 lg:mb-2.5  md:pl-0 pl-[95px]">
                                 <img src="../assets/images/cap.svg" alt="" class="mr-2">
                                 <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
                             </div>
-                            <p class="text-sm text-deep-black line-clamp-2 mb-2 hidden md:block">
-                                I bring my financial expertise, attention to details, and analytical skills to the total
-                                growth and success
-                            </p>
-                            <div class="flex items-center mb-3">
+                            <div class="flex items-center mb-4">
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
-                                    <p class="lg:text-xs text-[8px] text-deep-green">Retail Sales</p>
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-green mr-1">
+                                    <p class="lg:text-xs text-[8px] font-semibold text-deep-green">Retail Sales</p>
                                 </div>
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Internet Sales</p>
                                 </div>
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Customer Support Rep.</p>
                                 </div>
                                 <p class="lg:text-xs text-[8px] font-bold text-deep-black2">+ 3 more</p>
@@ -329,11 +451,11 @@
                         </div>
                     </div>
                     <div
-                        class="flex items-center w-full xl:h-[282px] md:h-[340px] h-fit rounded-[15px] border-[1px] border-light-black3 overflow-hidden mb-4 relative shadow-custom-shadow3">
+                        class="flex items-center w-full xl:h-[205px] md:h-[340px] h-fit rounded-[15px] border-[1px] border-light-black3 overflow-hidden mb-4 relative shadow-custom-shadow3">
                         <img src="../assets/images/man3.jpg" alt=""
                             class="w-[87px] md:w-[155px] lg:w-[211px] md:h-full h-[118px] md:relative absolute top-0 left-0 rounded-[10px] object-cover">
                         <div class="w-full lg:w-[calc(100%-211px)] lg:py-4 py-2 sm:px-3 px-1.5">
-                            <div class="flex items-center justify-between lg:mb-1 mb-0 md:pl-0 pl-[95px]">
+                            <div class="flex items-center justify-between md:pl-0 pl-[95px]">
                                 <h3 class="sm:text-base lg:text-lg text-sm font-semibold flex">Adams G. <img
                                         src="../assets/images/yellow-tick.svg" alt="" class="lg:w-auto w-3 block ml-2">
                                 </h3>
@@ -344,7 +466,7 @@
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Active 6 hrs ago</p>
                                 </div>
                             </div>
-                            <div class="flex items-center mb-1 lg:mb-2 md:pl-0 pl-[95px]">
+                            <div class="flex items-center mb-2 lg:mb-4 md:pl-0 pl-[95px]">
                                 <img src="../assets/images/senior-badge.svg" alt="" class="mr-2">
                                 <p class="lg:text-xs text-[10px]">Senior Level</p>
                             </div>
@@ -358,29 +480,21 @@
                                     <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
                                 </div>
                             </div>
-                            <div class="flex items-center mb-1 lg:mb-2  md:pl-0 pl-[95px]">
-                                <img src="../assets/images/lang.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
-                            </div>
                             <div class="flex items-center mb-2 lg:mb-2.5  md:pl-0 pl-[95px]">
                                 <img src="../assets/images/cap.svg" alt="" class="mr-2">
                                 <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
                             </div>
-                            <p class="text-sm text-deep-black line-clamp-2 mb-2 hidden md:block">
-                                I bring my financial expertise, attention to details, and analytical skills to the total
-                                growth and success
-                            </p>
-                            <div class="flex items-center mb-3">
+                            <div class="flex items-center mb-4">
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
-                                    <p class="lg:text-xs text-[8px] text-deep-green">Retail Sales</p>
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-green mr-1">
+                                    <p class="lg:text-xs text-[8px] font-semibold text-deep-green">Retail Sales</p>
                                 </div>
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Internet Sales</p>
                                 </div>
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Customer Support Rep.</p>
                                 </div>
                                 <p class="lg:text-xs text-[8px] font-bold text-deep-black2">+ 3 more</p>
@@ -396,11 +510,11 @@
                         </div>
                     </div>
                     <div
-                        class="flex items-center w-full xl:h-[282px] md:h-[340px] h-fit rounded-[15px] border-[1px] border-light-black3 overflow-hidden mb-4 relative shadow-custom-shadow3">
+                        class="flex items-center w-full xl:h-[205px] md:h-[340px] h-fit rounded-[15px] border-[1px] border-light-black3 overflow-hidden mb-4 relative shadow-custom-shadow3">
                         <img src="../assets/images/man3.jpg" alt=""
                             class="w-[87px] md:w-[155px] lg:w-[211px] md:h-full h-[118px] md:relative absolute top-0 left-0 rounded-[10px] object-cover">
                         <div class="w-full lg:w-[calc(100%-211px)] lg:py-4 py-2 sm:px-3 px-1.5">
-                            <div class="flex items-center justify-between lg:mb-1 mb-0 md:pl-0 pl-[95px]">
+                            <div class="flex items-center justify-between md:pl-0 pl-[95px]">
                                 <h3 class="sm:text-base lg:text-lg text-sm font-semibold flex">Adams G. <img
                                         src="../assets/images/yellow-tick.svg" alt="" class="lg:w-auto w-3 block ml-2">
                                 </h3>
@@ -411,7 +525,7 @@
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Active 6 hrs ago</p>
                                 </div>
                             </div>
-                            <div class="flex items-center mb-1 lg:mb-2 md:pl-0 pl-[95px]">
+                            <div class="flex items-center mb-2 lg:mb-4 md:pl-0 pl-[95px]">
                                 <img src="../assets/images/entry-sign.svg" alt="" class="mr-2">
                                 <p class="lg:text-xs text-[10px]">Entry Level</p>
                             </div>
@@ -425,29 +539,21 @@
                                     <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
                                 </div>
                             </div>
-                            <div class="flex items-center mb-1 lg:mb-2  md:pl-0 pl-[95px]">
-                                <img src="../assets/images/lang.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
-                            </div>
                             <div class="flex items-center mb-2 lg:mb-2.5  md:pl-0 pl-[95px]">
                                 <img src="../assets/images/cap.svg" alt="" class="mr-2">
                                 <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
                             </div>
-                            <p class="text-sm text-deep-black line-clamp-2 mb-2 hidden md:block">
-                                I bring my financial expertise, attention to details, and analytical skills to the total
-                                growth and success
-                            </p>
-                            <div class="flex items-center mb-3">
+                            <div class="flex items-center mb-4">
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
-                                    <p class="lg:text-xs text-[8px] text-deep-green">Retail Sales</p>
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-green mr-1">
+                                    <p class="lg:text-xs text-[8px] font-semibold text-deep-green">Retail Sales</p>
                                 </div>
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Internet Sales</p>
                                 </div>
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Customer Support Rep.</p>
                                 </div>
                                 <p class="lg:text-xs text-[8px] font-bold text-deep-black2">+ 3 more</p>
@@ -463,11 +569,11 @@
                         </div>
                     </div>
                     <div
-                        class="flex items-center w-full xl:h-[282px] md:h-[340px] h-fit rounded-[15px] border-[1px] border-light-black3 overflow-hidden mb-4 relative shadow-custom-shadow3">
+                        class="flex items-center w-full xl:h-[205px] md:h-[340px] h-fit rounded-[15px] border-[1px] border-light-black3 overflow-hidden mb-4 relative shadow-custom-shadow3">
                         <img src="../assets/images/man3.jpg" alt=""
                             class="w-[87px] md:w-[155px] lg:w-[211px] md:h-full h-[118px] md:relative absolute top-0 left-0 rounded-[10px] object-cover">
                         <div class="w-full lg:w-[calc(100%-211px)] lg:py-4 py-2 sm:px-3 px-1.5">
-                            <div class="flex items-center justify-between lg:mb-1 mb-0 md:pl-0 pl-[95px]">
+                            <div class="flex items-center justify-between md:pl-0 pl-[95px]">
                                 <h3 class="sm:text-base lg:text-lg text-sm font-semibold flex">Adams G. <img
                                         src="../assets/images/yellow-tick.svg" alt="" class="lg:w-auto w-3 block ml-2">
                                 </h3>
@@ -479,7 +585,7 @@
                                     <p class="lg:text-xs text-[10px]">Online Now</p>
                                 </div>
                             </div>
-                            <div class="flex items-center mb-1 lg:mb-2 md:pl-0 pl-[95px]">
+                            <div class="flex items-center mb-2 lg:mb-4 md:pl-0 pl-[95px]">
                                 <img src="../assets/images/mid-sign.svg" alt="" class="mr-2">
                                 <p class="lg:text-xs text-[10px]">Mid Level</p>
                             </div>
@@ -493,29 +599,25 @@
                                     <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
                                 </div>
                             </div>
-                            <div class="flex items-center mb-1 lg:mb-2  md:pl-0 pl-[95px]">
+                            <!-- <div class="flex items-center mb-1 lg:mb-2  md:pl-0 pl-[95px]">
                                 <img src="../assets/images/lang.svg" alt="" class="mr-2">
                                 <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
-                            </div>
+                            </div> -->
                             <div class="flex items-center mb-2 lg:mb-2.5  md:pl-0 pl-[95px]">
                                 <img src="../assets/images/cap.svg" alt="" class="mr-2">
                                 <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
                             </div>
-                            <p class="text-sm text-deep-black line-clamp-2 mb-2 hidden md:block">
-                                I bring my financial expertise, attention to details, and analytical skills to the total
-                                growth and success
-                            </p>
-                            <div class="flex items-center mb-3">
+                            <div class="flex items-center mb-4">
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
-                                    <p class="lg:text-xs text-[8px] text-deep-green">Retail Sales</p>
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-green mr-1">
+                                    <p class="lg:text-xs text-[8px] font-semibold text-deep-green">Retail Sales</p>
                                 </div>
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Internet Sales</p>
                                 </div>
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Customer Support Rep.</p>
                                 </div>
                                 <p class="lg:text-xs text-[8px] font-bold text-deep-black2">+ 3 more</p>
@@ -531,11 +633,11 @@
                         </div>
                     </div>
                     <div
-                        class="flex items-center w-full xl:h-[282px] md:h-[340px] h-fit rounded-[15px] border-[1px] border-light-black3 overflow-hidden mb-4 relative shadow-custom-shadow3">
+                        class="flex items-center w-full xl:h-[205px] md:h-[340px] h-fit rounded-[15px] border-[1px] border-light-black3 overflow-hidden mb-4 relative shadow-custom-shadow3">
                         <img src="../assets/images/man3.jpg" alt=""
                             class="w-[87px] md:w-[155px] lg:w-[211px] md:h-full h-[118px] md:relative absolute top-0 left-0 rounded-[10px] object-cover">
                         <div class="w-full lg:w-[calc(100%-211px)] lg:py-4 py-2 sm:px-3 px-1.5">
-                            <div class="flex items-center justify-between lg:mb-1 mb-0 md:pl-0 pl-[95px]">
+                            <div class="flex items-center justify-between md:pl-0 pl-[95px]">
                                 <h3 class="sm:text-base lg:text-lg text-sm font-semibold flex">Adams G. <img
                                         src="../assets/images/yellow-tick.svg" alt="" class="lg:w-auto w-3 block ml-2">
                                 </h3>
@@ -547,7 +649,7 @@
                                     <p class="lg:text-xs text-[10px]">Online Now</p>
                                 </div>
                             </div>
-                            <div class="flex items-center mb-1 lg:mb-2 md:pl-0 pl-[95px]">
+                            <div class="flex items-center mb-2 lg:mb-4 md:pl-0 pl-[95px]">
                                 <img src="../assets/images/senior-badge.svg" alt="" class="mr-2">
                                 <p class="lg:text-xs text-[10px]">Senior Level</p>
                             </div>
@@ -561,29 +663,21 @@
                                     <p class="lg:text-xs text-[10px] text-deep-black">Full-time</p>
                                 </div>
                             </div>
-                            <div class="flex items-center mb-1 lg:mb-2  md:pl-0 pl-[95px]">
-                                <img src="../assets/images/lang.svg" alt="" class="mr-2">
-                                <p class="lg:text-xs text-[10px] text-deep-black">English, Spanish</p>
-                            </div>
                             <div class="flex items-center mb-2 lg:mb-2.5  md:pl-0 pl-[95px]">
                                 <img src="../assets/images/cap.svg" alt="" class="mr-2">
                                 <p class="lg:text-xs text-[10px] text-deep-black">University of Michigan, 2012</p>
                             </div>
-                            <p class="text-sm text-deep-black line-clamp-2 mb-2 hidden md:block">
-                                I bring my financial expertise, attention to details, and analytical skills to the total
-                                growth and success
-                            </p>
-                            <div class="flex items-center mb-3">
+                            <div class="flex items-center mb-4">
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
-                                    <p class="lg:text-xs text-[8px] text-deep-green">Retail Sales</p>
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-green mr-1">
+                                    <p class="lg:text-xs text-[8px] font-semibold text-deep-green">Retail Sales</p>
                                 </div>
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Internet Sales</p>
                                 </div>
                                 <div
-                                    class="sm:py-[2px] py-[1px] sm:px-[3px] px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
+                                    class="sm:py-[2px] py-[1px] sm:px-1.5 px-[2px] rounded-[10px] border-[1px] border-deep-black3 mr-1">
                                     <p class="lg:text-xs text-[10px] text-deep-black3">Customer Support Rep.</p>
                                 </div>
                                 <p class="lg:text-xs text-[8px] font-bold text-deep-black2">+ 3 more</p>
@@ -625,7 +719,7 @@
                                     <p class="text-sm">Online Now</p>
                                 </div>
                             </div>
-                            <div class="flex items-center md:pl-0 pl-[95px] md:mb-2 mb-1">
+                            <div class="flex items-center md:pl-0 pl-[95px] mb-2 lg:mb-4">
                                 <img src="../assets/images/senior-badge.svg" alt="" class="w-auto lg:w-3.5 mr-2">
                                 <p class="lg:text-sm text-[10px]">Senior Level</p>
                             </div>
