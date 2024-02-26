@@ -162,5 +162,9 @@ requestNextBtn.addEventListener("click", () => {
         progressInd++
         requestProgTop.classList.add(`progress${progressInd + 1}`)
         requestProgress[progressInd].classList.add(`progress`)
+        singleProgress.forEach(item => {
+            item.classList.remove("active")
+            singleProgress[progressInd].classList.add("active")
+        })
     }
 })

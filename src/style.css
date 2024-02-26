@@ -351,7 +351,7 @@ section {
 
 
 .requestOverflow {
-    display: none;
+    /* display: none; */
 }
 
 .requestOverflow.active {
@@ -359,7 +359,7 @@ section {
 }
 
 .requestInt {
-    display: none;
+    /* display: none; */
 }
 
 .hireFortInt {
@@ -387,8 +387,20 @@ section {
 .requestProgress img {
     filter: unset;
 }
+.requestProgress.progress {
+    background-color: #05494c;
+    border-color: #05494c;
+}
 .requestProgress.progress img {
     filter: brightness(100);
+}
+
+
+.singleProgress {
+    display: none;
+}
+.singleProgress.active {
+    display: block;
 }
 /* #05494c */
 
