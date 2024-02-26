@@ -29,6 +29,7 @@ const modLookingFor2 = document.querySelector(".modLookingFor2")
 const modLookingFor3 = document.querySelector(".modLookingFor3")
 const modLookingFor4 = document.querySelector(".modLookingFor4")
 const modLookingFor5 = document.querySelector(".modLookingFor5")
+const modLookingFor6 = document.querySelector(".modLookingFor6")
 
 const lookingOverlay = document.querySelector(".lookingOverlay")
 const modLookingOverlay = document.querySelector(".modLookingOverlay")
@@ -43,16 +44,17 @@ const modToHire2 = document.querySelector(".modToHire2")
 const modToHire3 = document.querySelector(".modToHire3")
 const modToHire4 = document.querySelector(".modToHire4")
 const modToHire5 = document.querySelector(".modToHire5")
+const modToHire6 = document.querySelector(".modToHire6")
 
 const lookingText = document.querySelectorAll(".lookingText")
 
 
 const lookingForArr = [lookingFor, lookingFor2, lookingFor3, lookingFor4, lookingFor5]
-const modLookingForArr = [modLookingFor, modLookingFor2, modLookingFor3, modLookingFor4, modLookingFor5]
+const modLookingForArr = [modLookingFor, modLookingFor2, modLookingFor3, modLookingFor4, modLookingFor5, modLookingFor6]
 const toHireArr = [toHire, toHire2, toHire3, toHire4, toHire5]
-const modToHireArr = [modToHire, modToHire2, modToHire3, modToHire4, modToHire5]
+const modToHireArr = [modToHire, modToHire2, modToHire3, modToHire4, modToHire5, modToHire6]
 const placeholderArr = ["Roles", "Industry", "Year Graduated", "Compensation", "Radius"]
-const modPlaceholderArr = ["Job Position", "Job Type", "Compensation", "Number of hires", "Job Setting"]
+const modPlaceholderArr = ["Job Position", "Job Type", "Compensation", "Number of hires", "Job Setting", "PST"]
 
 
 
@@ -137,4 +139,28 @@ modLookingOverlay.addEventListener("click", () => {
         item.classList.remove("active")
     })
     modLookingOverlay.classList.remove("active")
+})
+
+
+
+
+
+
+
+
+
+const requestProgTop = document.querySelector(".requestProgTop")
+const requestProgress = document.querySelectorAll(".requestProgress")
+const singleProgress = document.querySelectorAll(".singleProgress")
+const requestNextBtn = document.querySelector(".requestNextBtn")
+
+let progressInd = 0
+
+
+requestNextBtn.addEventListener("click", () => {
+    if (progressInd < 1) {
+        progressInd++
+        requestProgTop.classList.add(`progress${progressInd + 1}`)
+        requestProgress[progressInd].classList.add(`progress`)
+    }
 })
