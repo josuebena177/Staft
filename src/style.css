@@ -185,7 +185,7 @@ section {
 
 
 .scrollContainer {
-    height: 1600px;
+    height: 1185px;
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -277,21 +277,42 @@ section {
 
 
 
-.lookingOverlay {
+.lookingOverlay,
+.modLookingOverlay {
     pointer-events: none;
 }
 
-.lookingOverlay.active {
+.lookingOverlay.active,
+.modLookingOverlay.active {
     pointer-events: all;
     z-index: 10;
 }
+.modLookingOverlay.active {
+    pointer-events: all;
+    /* z-index: 101; */
+}
 
-.toHire, .toHire2, .toHire3, .toHire4, .toHire5 {
+.toHire,
+.toHire2,
+.toHire3,
+.toHire4,
+.toHire5,
+.modToHire,
+.modToHire2,
+.modToHire3,
+.modToHire4,
+.modToHire5 {
     opacity: 0;
     pointer-events: none;
 }
 
-.toHire.active, .toHire2.active, .toHire3.active, .toHire4.active, .toHire5.active {
+.toHire.active,
+.toHire2.active,
+.toHire3.active,
+.toHire4.active,
+.toHire5.active,
+.modToHire.active,
+.modToHire2.active {
     opacity: 1;
     pointer-events: all;
 }
@@ -378,6 +399,7 @@ section {
     .content {
         padding: 10px 15px
     }
+
     .content.sliderContent {
         padding: 0 15px;
     }
@@ -396,6 +418,7 @@ section {
     .content {
         padding: 10px 32px;
     }
+
     .content.sliderContent {
         padding: 0 32px;
     }
