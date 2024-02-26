@@ -1160,6 +1160,10 @@ video {
   top: 50px;
 }
 
+.left-\[10px\] {
+  left: 10px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -2255,6 +2259,10 @@ video {
   padding-top: 70px;
 }
 
+.pl-8 {
+  padding-left: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2593,6 +2601,10 @@ video {
 
   .sm\:top-\[65px\] {
     top: 65px;
+  }
+
+  .sm\:left-\[20px\] {
+    left: 20px;
   }
 
   .sm\:-mb-\[160px\] {
@@ -3437,6 +3449,10 @@ video {
 
   .lg\:rounded-\[32px\] {
     border-radius: 32px;
+  }
+
+  .lg\:rounded-\[20px\] {
+    border-radius: 20px;
   }
 
   .lg\:px-4 {
