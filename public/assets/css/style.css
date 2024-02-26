@@ -365,7 +365,7 @@ section {
 }
 
 .requestOverflow {
-  /* display: none; */
+  display: none;
 }
 
 .requestOverflow.active {
@@ -373,7 +373,7 @@ section {
 }
 
 .requestInt {
-  /* display: none; */
+  display: none;
 }
 
 .hireFortInt {
