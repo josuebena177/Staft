@@ -1406,6 +1406,10 @@ video {
   margin-top: 30px;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .block {
   display: block;
 }
@@ -2697,6 +2701,10 @@ video {
 
   .sm\:mt-\[-200px\] {
     margin-top: -200px;
+  }
+
+  .sm\:mt-4 {
+    margin-top: 1rem;
   }
 
   .sm\:block {
