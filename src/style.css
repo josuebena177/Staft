@@ -520,6 +520,13 @@ section {
 }
 
 
+@media (max-width: 640px) {
+    .secondRadial {
+        background: radial-gradient(50% 50% at 50% 50%, #698b0fb0 15.5%, #ffca022e 86%, rgb(255 202 2 / 18%) 90%);
+    }
+}
+
+
 
 
 
